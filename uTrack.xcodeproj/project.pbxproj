@@ -7,14 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340756872044C02E00649C3D /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340756862044C02E00649C3D /* SetupProfileViewController.swift */; };
+		3413BDEA2045272F00E47BD9 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413BDE92045272F00E47BD9 /* AuthorizationViewController.swift */; };
+		341A35862088155700D2A4A9 /* TrackedItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341A35852088155700D2A4A9 /* TrackedItemCollectionViewCell.swift */; };
+		342F90F5209C105B0011BBF1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F90F4209C105B0011BBF1 /* WebViewController.swift */; };
 		343041B720433CDC0077289F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343041B620433CDC0077289F /* AppDelegate.swift */; };
-		343041B920433CDC0077289F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343041B820433CDC0077289F /* ViewController.swift */; };
-		343041BC20433CDC0077289F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343041BA20433CDC0077289F /* Main.storyboard */; };
-		343041BF20433CDC0077289F /* uTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 343041BD20433CDC0077289F /* uTrack.xcdatamodeld */; };
 		343041C120433CDC0077289F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343041C020433CDC0077289F /* Assets.xcassets */; };
 		343041C420433CDC0077289F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343041C220433CDC0077289F /* LaunchScreen.storyboard */; };
 		343041CF20433CDD0077289F /* uTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343041CE20433CDD0077289F /* uTrackTests.swift */; };
 		343041DA20433CDD0077289F /* uTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343041D920433CDD0077289F /* uTrackUITests.swift */; };
+		343041EE204340420077289F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343041ED204340420077289F /* Main.storyboard */; };
+		343041F6204344900077289F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343041F5204344900077289F /* MapKit.framework */; };
+		344265F0207591BA00011DFD /* PresetItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344265EF207591BA00011DFD /* PresetItemsTableViewController.swift */; };
+		344265F32075927A00011DFD /* SavedDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344265F22075927A00011DFD /* SavedDataHandler.swift */; };
+		344265FB2075A64500011DFD /* icon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265F52075A64500011DFD /* icon_iPad.png */; };
+		344265FC2075A64500011DFD /* iPhone3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265F62075A64500011DFD /* iPhone3x.png */; };
+		344265FD2075A64500011DFD /* icon_iPadPro.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265F72075A64500011DFD /* icon_iPadPro.png */; };
+		344265FE2075A64500011DFD /* iPhone2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265F82075A64500011DFD /* iPhone2x.png */; };
+		344265FF2075A64500011DFD /* main_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265F92075A64500011DFD /* main_icon.png */; };
+		344266002075A64500011DFD /* icon_iPad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265FA2075A64500011DFD /* icon_iPad2x.png */; };
+		3457779E2043B72B00A25106 /* ItemHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3457779D2043B72B00A25106 /* ItemHandler.swift */; };
+		345CC220209E0E2C00BE6CAF /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CC21F209E0E2C00BE6CAF /* NotificationHandler.swift */; };
+		346D4A13208EF73D00BC7795 /* CheckStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D4A12208EF73D00BC7795 /* CheckStock.swift */; };
+		3477B6FF20995E9A003308B9 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3477B6FE20995E9A003308B9 /* FlowLayout.swift */; };
+		348953C6208ED58100EFE20C /* ItemInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348953C5208ED58100EFE20C /* ItemInfoViewController.swift */; };
+		349B8277209D6DF50012B601 /* X Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 349B8276209D6DF50012B601 /* X Icon.png */; };
+		349B8279209D73D70012B601 /* AroundMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B8278209D73D70012B601 /* AroundMeViewController.swift */; };
+		34A4B921209ACA8800CE6217 /* logo_424x210.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B91C209ACA8600CE6217 /* logo_424x210.png */; };
+		34A4B922209ACA8800CE6217 /* GameStop.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B91D209ACA8700CE6217 /* GameStop.svg.png */; };
+		34A4B923209ACA8800CE6217 /* Microsoft-Logo-icon-png-Transparent-Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B91E209ACA8700CE6217 /* Microsoft-Logo-icon-png-Transparent-Background.png */; };
+		34A4B924209ACA8800CE6217 /* 1280px-B&H_Foto_&_Electronics_Logo.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B91F209ACA8800CE6217 /* 1280px-B&H_Foto_&_Electronics_Logo.svg.png */; };
+		34A4B925209ACA8800CE6217 /* 2000px-Best_Buy_Logo.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B920209ACA8800CE6217 /* 2000px-Best_Buy_Logo.svg.png */; };
+		34A4B927209ACB8F00CE6217 /* Amazon-A-Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B926209ACB8F00CE6217 /* Amazon-A-Logo.jpg */; };
+		34A4B929209ACF1C00CE6217 /* Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B928209ACF1B00CE6217 /* Checkmark.png */; };
+		34A4B92B209AD23800CE6217 /* InStockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4B92A209AD23800CE6217 /* InStockTableViewCell.swift */; };
+		34AA15CE2086963A00D0B4BE /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA15CD2086963A00D0B4BE /* MainCollectionViewController.swift */; };
+		34B5302D208702AF005208A9 /* SNES Classic Edition.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53021208702AD005208A9 /* SNES Classic Edition.png */; };
+		34B5302E208702AF005208A9 /* NVIDIA GTX 1070TI.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53022208702AD005208A9 /* NVIDIA GTX 1070TI.png */; };
+		34B5302F208702AF005208A9 /* Airpods.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53023208702AE005208A9 /* Airpods.png */; };
+		34B53030208702AF005208A9 /* NVIDIA GTX 1050TI.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53024208702AE005208A9 /* NVIDIA GTX 1050TI.png */; };
+		34B53032208702AF005208A9 /* Xbox One X.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53026208702AE005208A9 /* Xbox One X.png */; };
+		34B53033208702AF005208A9 /* NVIDIA GTX 1060.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53027208702AE005208A9 /* NVIDIA GTX 1060.png */; };
+		34B53034208702AF005208A9 /* Nintendo Switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53028208702AF005208A9 /* Nintendo Switch.png */; };
+		34B53035208702AF005208A9 /* NVIDIA GTX 1050.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53029208702AF005208A9 /* NVIDIA GTX 1050.png */; };
+		34B53036208702AF005208A9 /* NVIDIA GTX 1080.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B5302A208702AF005208A9 /* NVIDIA GTX 1080.png */; };
+		34B53037208702AF005208A9 /* NVIDIA GTX 1070.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B5302B208702AF005208A9 /* NVIDIA GTX 1070.png */; };
+		34B53038208702AF005208A9 /* PlayStation 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B5302C208702AF005208A9 /* PlayStation 4.png */; };
+		34B5303A208705A4005208A9 /* NVIDIA GTX 1080TI.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53039208705A4005208A9 /* NVIDIA GTX 1080TI.png */; };
+		34F562E2209034BF001BA07B /* Info Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E0209034BE001BA07B /* Info Icon@2x.png */; };
+		34F562E3209034BF001BA07B /* Info Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E1209034BF001BA07B /* Info Icon@3x.png */; };
+		34F562E62090354C001BA07B /* Map Icon @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E42090354C001BA07B /* Map Icon @2x.png */; };
+		34F562E72090354C001BA07B /* Map Icon @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E52090354C001BA07B /* Map Icon @3x.png */; };
+		34F562EA209035F3001BA07B /* Globe Icon @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E8209035F1001BA07B /* Globe Icon @2x.png */; };
+		34F562EB209035F3001BA07B /* Globe Icon @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E9209035F2001BA07B /* Globe Icon @3x.png */; };
+		34F562F02090CF64001BA07B /* universe-wallpaper_wallpprs.com_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34F562EF2090CF64001BA07B /* universe-wallpaper_wallpprs.com_.jpg */; };
+		34F562F320912C4B001BA07B /* OnlineStatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F562F220912C4B001BA07B /* OnlineStatusTableViewController.swift */; };
+		34FD5B9C20880BEC00451E8E /* Group@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FD5B9920880BEC00451E8E /* Group@3x.png */; };
+		34FD5B9D20880BEC00451E8E /* Group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FD5B9A20880BEC00451E8E /* Group@2x.png */; };
+		34FD5B9E20880BEC00451E8E /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FD5B9B20880BEC00451E8E /* Group.png */; };
+		F1700B56A0751661A4C7E152 /* Pods_uTrackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7F3E64ABB91B5309B6BCA2 /* Pods_uTrackTests.framework */; };
+		F6D4225EFD9413F428ECA2D9 /* Pods_uTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30CFE24D9114434B5591CF2 /* Pods_uTrack.framework */; };
+		F7C2745D0D0470E112814EEB /* Pods_uTrackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52107ACE32887BCA03028E10 /* Pods_uTrackUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +88,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340756862044C02E00649C3D /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
+		3413BDE92045272F00E47BD9 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		341A35852088155700D2A4A9 /* TrackedItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		342F90F4209C105B0011BBF1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		343041B320433CDC0077289F /* uTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		343041B620433CDC0077289F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		343041B820433CDC0077289F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		343041BB20433CDC0077289F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		343041BE20433CDC0077289F /* uTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = uTrack.xcdatamodel; sourceTree = "<group>"; };
 		343041C020433CDC0077289F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		343041C320433CDC0077289F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +104,65 @@
 		343041D520433CDD0077289F /* uTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		343041D920433CDD0077289F /* uTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uTrackUITests.swift; sourceTree = "<group>"; };
 		343041DB20433CDD0077289F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343041ED204340420077289F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		343041F3204344840077289F /* uTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uTrack.entitlements; sourceTree = "<group>"; };
+		343041F5204344900077289F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		344265EF207591BA00011DFD /* PresetItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetItemsTableViewController.swift; sourceTree = "<group>"; };
+		344265F22075927A00011DFD /* SavedDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataHandler.swift; sourceTree = "<group>"; };
+		344265F52075A64500011DFD /* icon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPad.png; sourceTree = "<group>"; };
+		344265F62075A64500011DFD /* iPhone3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone3x.png; sourceTree = "<group>"; };
+		344265F72075A64500011DFD /* icon_iPadPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPadPro.png; sourceTree = "<group>"; };
+		344265F82075A64500011DFD /* iPhone2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone2x.png; sourceTree = "<group>"; };
+		344265F92075A64500011DFD /* main_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_icon.png; sourceTree = "<group>"; };
+		344265FA2075A64500011DFD /* icon_iPad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPad2x.png; sourceTree = "<group>"; };
+		3457779D2043B72B00A25106 /* ItemHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHandler.swift; sourceTree = "<group>"; };
+		345CC21F209E0E2C00BE6CAF /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		346D4A12208EF73D00BC7795 /* CheckStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckStock.swift; sourceTree = "<group>"; };
+		3477B6FE20995E9A003308B9 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		348953C5208ED58100EFE20C /* ItemInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoViewController.swift; sourceTree = "<group>"; };
+		349B8276209D6DF50012B601 /* X Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Icon.png"; sourceTree = "<group>"; };
+		349B8278209D73D70012B601 /* AroundMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundMeViewController.swift; sourceTree = "<group>"; };
+		34A4B91C209ACA8600CE6217 /* logo_424x210.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_424x210.png; sourceTree = "<group>"; };
+		34A4B91D209ACA8700CE6217 /* GameStop.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameStop.svg.png; sourceTree = "<group>"; };
+		34A4B91E209ACA8700CE6217 /* Microsoft-Logo-icon-png-Transparent-Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Microsoft-Logo-icon-png-Transparent-Background.png"; sourceTree = "<group>"; };
+		34A4B91F209ACA8800CE6217 /* 1280px-B&H_Foto_&_Electronics_Logo.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1280px-B&H_Foto_&_Electronics_Logo.svg.png"; sourceTree = "<group>"; };
+		34A4B920209ACA8800CE6217 /* 2000px-Best_Buy_Logo.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2000px-Best_Buy_Logo.svg.png"; sourceTree = "<group>"; };
+		34A4B926209ACB8F00CE6217 /* Amazon-A-Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amazon-A-Logo.jpg"; sourceTree = "<group>"; };
+		34A4B928209ACF1B00CE6217 /* Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checkmark.png; sourceTree = "<group>"; };
+		34A4B92A209AD23800CE6217 /* InStockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InStockTableViewCell.swift; sourceTree = "<group>"; };
+		34AA15CD2086963A00D0B4BE /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		34B53021208702AD005208A9 /* SNES Classic Edition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SNES Classic Edition.png"; sourceTree = "<group>"; };
+		34B53022208702AD005208A9 /* NVIDIA GTX 1070TI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1070TI.png"; sourceTree = "<group>"; };
+		34B53023208702AE005208A9 /* Airpods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Airpods.png; sourceTree = "<group>"; };
+		34B53024208702AE005208A9 /* NVIDIA GTX 1050TI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1050TI.png"; sourceTree = "<group>"; };
+		34B53026208702AE005208A9 /* Xbox One X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Xbox One X.png"; sourceTree = "<group>"; };
+		34B53027208702AE005208A9 /* NVIDIA GTX 1060.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1060.png"; sourceTree = "<group>"; };
+		34B53028208702AF005208A9 /* Nintendo Switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nintendo Switch.png"; sourceTree = "<group>"; };
+		34B53029208702AF005208A9 /* NVIDIA GTX 1050.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1050.png"; sourceTree = "<group>"; };
+		34B5302A208702AF005208A9 /* NVIDIA GTX 1080.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1080.png"; sourceTree = "<group>"; };
+		34B5302B208702AF005208A9 /* NVIDIA GTX 1070.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1070.png"; sourceTree = "<group>"; };
+		34B5302C208702AF005208A9 /* PlayStation 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayStation 4.png"; sourceTree = "<group>"; };
+		34B53039208705A4005208A9 /* NVIDIA GTX 1080TI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1080TI.png"; sourceTree = "<group>"; };
+		34F562E0209034BE001BA07B /* Info Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info Icon@2x.png"; sourceTree = "<group>"; };
+		34F562E1209034BF001BA07B /* Info Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info Icon@3x.png"; sourceTree = "<group>"; };
+		34F562E42090354C001BA07B /* Map Icon @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map Icon @2x.png"; sourceTree = "<group>"; };
+		34F562E52090354C001BA07B /* Map Icon @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map Icon @3x.png"; sourceTree = "<group>"; };
+		34F562E8209035F1001BA07B /* Globe Icon @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Globe Icon @2x.png"; sourceTree = "<group>"; };
+		34F562E9209035F2001BA07B /* Globe Icon @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Globe Icon @3x.png"; sourceTree = "<group>"; };
+		34F562EF2090CF64001BA07B /* universe-wallpaper_wallpprs.com_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "universe-wallpaper_wallpprs.com_.jpg"; sourceTree = "<group>"; };
+		34F562F220912C4B001BA07B /* OnlineStatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineStatusTableViewController.swift; sourceTree = "<group>"; };
+		34FD5B9920880BEC00451E8E /* Group@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group@3x.png"; sourceTree = "<group>"; };
+		34FD5B9A20880BEC00451E8E /* Group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group@2x.png"; sourceTree = "<group>"; };
+		34FD5B9B20880BEC00451E8E /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Group.png; sourceTree = "<group>"; };
+		5000E2B033E794FFB6153DAF /* Pods-uTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-uTrack/Pods-uTrack.release.xcconfig"; sourceTree = "<group>"; };
+		52107ACE32887BCA03028E10 /* Pods_uTrackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uTrackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CFE7C6A105FDDB7BCEF49D4 /* Pods-uTrackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-uTrackUITests/Pods-uTrackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		94CBE0D0FB95AFAD24EC5FC9 /* Pods-uTrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-uTrackTests/Pods-uTrackTests.release.xcconfig"; sourceTree = "<group>"; };
+		B30CFE24D9114434B5591CF2 /* Pods_uTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7F3E64ABB91B5309B6BCA2 /* Pods_uTrackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uTrackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAA90A85B2CB90CDDB33CF6 /* Pods-uTrackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uTrackUITests/Pods-uTrackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDDC46849E464DE39E7AAC75 /* Pods-uTrackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uTrackTests/Pods-uTrackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F99DFA53F5BACEA19DA753F4 /* Pods-uTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uTrack/Pods-uTrack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +170,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343041F6204344900077289F /* MapKit.framework in Frameworks */,
+				F6D4225EFD9413F428ECA2D9 /* Pods_uTrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1700B56A0751661A4C7E152 /* Pods_uTrackTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +187,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C2745D0D0470E112814EEB /* Pods_uTrackUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21AA67785B9F9972481C8E0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F99DFA53F5BACEA19DA753F4 /* Pods-uTrack.debug.xcconfig */,
+				5000E2B033E794FFB6153DAF /* Pods-uTrack.release.xcconfig */,
+				DDDC46849E464DE39E7AAC75 /* Pods-uTrackTests.debug.xcconfig */,
+				94CBE0D0FB95AFAD24EC5FC9 /* Pods-uTrackTests.release.xcconfig */,
+				DDAA90A85B2CB90CDDB33CF6 /* Pods-uTrackUITests.debug.xcconfig */,
+				5CFE7C6A105FDDB7BCEF49D4 /* Pods-uTrackUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		340756832044BFF600649C3D /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				340756862044C02E00649C3D /* SetupProfileViewController.swift */,
+				3413BDE92045272F00E47BD9 /* AuthorizationViewController.swift */,
+				344265EF207591BA00011DFD /* PresetItemsTableViewController.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		340756842044BFFD00649C3D /* Main App */ = {
+			isa = PBXGroup;
+			children = (
+				34AA15CD2086963A00D0B4BE /* MainCollectionViewController.swift */,
+				348953C5208ED58100EFE20C /* ItemInfoViewController.swift */,
+				34F562F220912C4B001BA07B /* OnlineStatusTableViewController.swift */,
+				342F90F4209C105B0011BBF1 /* WebViewController.swift */,
+				349B8278209D73D70012B601 /* AroundMeViewController.swift */,
+			);
+			path = "Main App";
+			sourceTree = "<group>";
+		};
+		341A35832088153B00D2A4A9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				341A35852088155700D2A4A9 /* TrackedItemCollectionViewCell.swift */,
+				3477B6FE20995E9A003308B9 /* FlowLayout.swift */,
+				34A4B92A209AD23800CE6217 /* InStockTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		343041AA20433CDC0077289F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +246,8 @@
 				343041CD20433CDD0077289F /* uTrackTests */,
 				343041D820433CDD0077289F /* uTrackUITests */,
 				343041B420433CDC0077289F /* Products */,
+				343041F4204344900077289F /* Frameworks */,
+				21AA67785B9F9972481C8E0C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +264,14 @@
 		343041B520433CDC0077289F /* uTrack */ = {
 			isa = PBXGroup;
 			children = (
-				343041B620433CDC0077289F /* AppDelegate.swift */,
-				343041B820433CDC0077289F /* ViewController.swift */,
-				343041BA20433CDC0077289F /* Main.storyboard */,
-				343041C020433CDC0077289F /* Assets.xcassets */,
-				343041C220433CDC0077289F /* LaunchScreen.storyboard */,
-				343041C520433CDC0077289F /* Info.plist */,
-				343041BD20433CDC0077289F /* uTrack.xcdatamodeld */,
+				343041F3204344840077289F /* uTrack.entitlements */,
+				341A35832088153B00D2A4A9 /* Cells */,
+				343041EC20433E8D0077289F /* Views */,
+				343041EB20433E800077289F /* View Controllers */,
+				343041EA20433E790077289F /* Objects */,
+				343041E920433E6C0077289F /* Delegate */,
+				343041E820433CFD0077289F /* Other */,
+				343041E720433CF00077289F /* Images */,
 			);
 			path = uTrack;
 			sourceTree = "<group>";
@@ -128,6 +294,171 @@
 			path = uTrackUITests;
 			sourceTree = "<group>";
 		};
+		343041E720433CF00077289F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				349B8276209D6DF50012B601 /* X Icon.png */,
+				34A4B928209ACF1B00CE6217 /* Checkmark.png */,
+				34A4B91B209ACA6400CE6217 /* Store Images */,
+				34F562EF2090CF64001BA07B /* universe-wallpaper_wallpprs.com_.jpg */,
+				34F562EE2090CC47001BA07B /* Info Images */,
+				34F562ED2090CC37001BA07B /* Globe Images */,
+				34F562EC2090CC2E001BA07B /* Map Images */,
+				34FD5B9820880BD700451E8E /* Delete Button */,
+				34AA15C62086641D00D0B4BE /* Product Images */,
+				344265F42075A63200011DFD /* Icon */,
+				343041C020433CDC0077289F /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		343041E820433CFD0077289F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				343041C520433CDC0077289F /* Info.plist */,
+				343041BD20433CDC0077289F /* uTrack.xcdatamodeld */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		343041E920433E6C0077289F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				343041B620433CDC0077289F /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		343041EA20433E790077289F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				344265F12075926500011DFD /* Handlers */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		343041EB20433E800077289F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				340756842044BFFD00649C3D /* Main App */,
+				340756832044BFF600649C3D /* Setup */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		343041EC20433E8D0077289F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				343041ED204340420077289F /* Main.storyboard */,
+				343041C220433CDC0077289F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		343041F4204344900077289F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				343041F5204344900077289F /* MapKit.framework */,
+				B30CFE24D9114434B5591CF2 /* Pods_uTrack.framework */,
+				DD7F3E64ABB91B5309B6BCA2 /* Pods_uTrackTests.framework */,
+				52107ACE32887BCA03028E10 /* Pods_uTrackUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		344265F12075926500011DFD /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				3457779D2043B72B00A25106 /* ItemHandler.swift */,
+				344265F22075927A00011DFD /* SavedDataHandler.swift */,
+				346D4A12208EF73D00BC7795 /* CheckStock.swift */,
+				345CC21F209E0E2C00BE6CAF /* NotificationHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		344265F42075A63200011DFD /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				344265F52075A64500011DFD /* icon_iPad.png */,
+				344265FA2075A64500011DFD /* icon_iPad2x.png */,
+				344265F72075A64500011DFD /* icon_iPadPro.png */,
+				344265F82075A64500011DFD /* iPhone2x.png */,
+				344265F62075A64500011DFD /* iPhone3x.png */,
+				344265F92075A64500011DFD /* main_icon.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		34A4B91B209ACA6400CE6217 /* Store Images */ = {
+			isa = PBXGroup;
+			children = (
+				34A4B926209ACB8F00CE6217 /* Amazon-A-Logo.jpg */,
+				34A4B91F209ACA8800CE6217 /* 1280px-B&H_Foto_&_Electronics_Logo.svg.png */,
+				34A4B920209ACA8800CE6217 /* 2000px-Best_Buy_Logo.svg.png */,
+				34A4B91D209ACA8700CE6217 /* GameStop.svg.png */,
+				34A4B91C209ACA8600CE6217 /* logo_424x210.png */,
+				34A4B91E209ACA8700CE6217 /* Microsoft-Logo-icon-png-Transparent-Background.png */,
+			);
+			path = "Store Images";
+			sourceTree = "<group>";
+		};
+		34AA15C62086641D00D0B4BE /* Product Images */ = {
+			isa = PBXGroup;
+			children = (
+				34B53023208702AE005208A9 /* Airpods.png */,
+				34B53028208702AF005208A9 /* Nintendo Switch.png */,
+				34B53029208702AF005208A9 /* NVIDIA GTX 1050.png */,
+				34B53024208702AE005208A9 /* NVIDIA GTX 1050TI.png */,
+				34B53027208702AE005208A9 /* NVIDIA GTX 1060.png */,
+				34B5302B208702AF005208A9 /* NVIDIA GTX 1070.png */,
+				34B53022208702AD005208A9 /* NVIDIA GTX 1070TI.png */,
+				34B5302A208702AF005208A9 /* NVIDIA GTX 1080.png */,
+				34B53039208705A4005208A9 /* NVIDIA GTX 1080TI.png */,
+				34B5302C208702AF005208A9 /* PlayStation 4.png */,
+				34B53021208702AD005208A9 /* SNES Classic Edition.png */,
+				34B53026208702AE005208A9 /* Xbox One X.png */,
+			);
+			path = "Product Images";
+			sourceTree = "<group>";
+		};
+		34F562EC2090CC2E001BA07B /* Map Images */ = {
+			isa = PBXGroup;
+			children = (
+				34F562E42090354C001BA07B /* Map Icon @2x.png */,
+				34F562E52090354C001BA07B /* Map Icon @3x.png */,
+			);
+			path = "Map Images";
+			sourceTree = "<group>";
+		};
+		34F562ED2090CC37001BA07B /* Globe Images */ = {
+			isa = PBXGroup;
+			children = (
+				34F562E8209035F1001BA07B /* Globe Icon @2x.png */,
+				34F562E9209035F2001BA07B /* Globe Icon @3x.png */,
+			);
+			path = "Globe Images";
+			sourceTree = "<group>";
+		};
+		34F562EE2090CC47001BA07B /* Info Images */ = {
+			isa = PBXGroup;
+			children = (
+				34F562E0209034BE001BA07B /* Info Icon@2x.png */,
+				34F562E1209034BF001BA07B /* Info Icon@3x.png */,
+			);
+			path = "Info Images";
+			sourceTree = "<group>";
+		};
+		34FD5B9820880BD700451E8E /* Delete Button */ = {
+			isa = PBXGroup;
+			children = (
+				34FD5B9B20880BEC00451E8E /* Group.png */,
+				34FD5B9A20880BEC00451E8E /* Group@2x.png */,
+				34FD5B9920880BEC00451E8E /* Group@3x.png */,
+			);
+			path = "Delete Button";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +466,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 343041DE20433CDD0077289F /* Build configuration list for PBXNativeTarget "uTrack" */;
 			buildPhases = (
+				817849AA6EE4DA78B3D9A944 /* [CP] Check Pods Manifest.lock */,
 				343041AF20433CDC0077289F /* Sources */,
 				343041B020433CDC0077289F /* Frameworks */,
 				343041B120433CDC0077289F /* Resources */,
+				3803F82B73F33FD820FB7957 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +485,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 343041E120433CDD0077289F /* Build configuration list for PBXNativeTarget "uTrackTests" */;
 			buildPhases = (
+				16C0CA925781A637AAF886B8 /* [CP] Check Pods Manifest.lock */,
 				343041C620433CDD0077289F /* Sources */,
 				343041C720433CDD0077289F /* Frameworks */,
 				343041C820433CDD0077289F /* Resources */,
@@ -170,6 +504,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 343041E420433CDD0077289F /* Build configuration list for PBXNativeTarget "uTrackUITests" */;
 			buildPhases = (
+				DE42984E8C308FE3C4AC5130 /* [CP] Check Pods Manifest.lock */,
 				343041D120433CDD0077289F /* Sources */,
 				343041D220433CDD0077289F /* Frameworks */,
 				343041D320433CDD0077289F /* Resources */,
@@ -191,12 +526,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Matthew Jagiela";
 				TargetAttributes = {
 					343041B220433CDC0077289F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					343041C920433CDD0077289F = {
 						CreatedOnToolsVersion = 9.2;
@@ -235,9 +581,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B53030208702AF005208A9 /* NVIDIA GTX 1050TI.png in Resources */,
+				34FD5B9E20880BEC00451E8E /* Group.png in Resources */,
+				34B5302F208702AF005208A9 /* Airpods.png in Resources */,
+				34A4B924209ACA8800CE6217 /* 1280px-B&H_Foto_&_Electronics_Logo.svg.png in Resources */,
+				34B53034208702AF005208A9 /* Nintendo Switch.png in Resources */,
+				34A4B927209ACB8F00CE6217 /* Amazon-A-Logo.jpg in Resources */,
+				34A4B925209ACA8800CE6217 /* 2000px-Best_Buy_Logo.svg.png in Resources */,
+				34B5302E208702AF005208A9 /* NVIDIA GTX 1070TI.png in Resources */,
+				34F562F02090CF64001BA07B /* universe-wallpaper_wallpprs.com_.jpg in Resources */,
+				34B53038208702AF005208A9 /* PlayStation 4.png in Resources */,
+				344265FD2075A64500011DFD /* icon_iPadPro.png in Resources */,
+				344265FE2075A64500011DFD /* iPhone2x.png in Resources */,
+				34FD5B9C20880BEC00451E8E /* Group@3x.png in Resources */,
+				349B8277209D6DF50012B601 /* X Icon.png in Resources */,
+				34B5303A208705A4005208A9 /* NVIDIA GTX 1080TI.png in Resources */,
+				34B5302D208702AF005208A9 /* SNES Classic Edition.png in Resources */,
+				34B53035208702AF005208A9 /* NVIDIA GTX 1050.png in Resources */,
+				344266002075A64500011DFD /* icon_iPad2x.png in Resources */,
+				34A4B922209ACA8800CE6217 /* GameStop.svg.png in Resources */,
+				34F562E62090354C001BA07B /* Map Icon @2x.png in Resources */,
+				34F562E3209034BF001BA07B /* Info Icon@3x.png in Resources */,
+				343041EE204340420077289F /* Main.storyboard in Resources */,
+				34B53032208702AF005208A9 /* Xbox One X.png in Resources */,
+				34B53037208702AF005208A9 /* NVIDIA GTX 1070.png in Resources */,
+				34F562EB209035F3001BA07B /* Globe Icon @3x.png in Resources */,
+				344265FC2075A64500011DFD /* iPhone3x.png in Resources */,
+				34F562E2209034BF001BA07B /* Info Icon@2x.png in Resources */,
+				34B53033208702AF005208A9 /* NVIDIA GTX 1060.png in Resources */,
+				34A4B929209ACF1C00CE6217 /* Checkmark.png in Resources */,
 				343041C420433CDC0077289F /* LaunchScreen.storyboard in Resources */,
+				34A4B921209ACA8800CE6217 /* logo_424x210.png in Resources */,
+				34F562EA209035F3001BA07B /* Globe Icon @2x.png in Resources */,
+				34B53036208702AF005208A9 /* NVIDIA GTX 1080.png in Resources */,
+				344265FF2075A64500011DFD /* main_icon.png in Resources */,
+				34A4B923209ACA8800CE6217 /* Microsoft-Logo-icon-png-Transparent-Background.png in Resources */,
+				344265FB2075A64500011DFD /* icon_iPad.png in Resources */,
+				34F562E72090354C001BA07B /* Map Icon @3x.png in Resources */,
 				343041C120433CDC0077289F /* Assets.xcassets in Resources */,
-				343041BC20433CDC0077289F /* Main.storyboard in Resources */,
+				34FD5B9D20880BEC00451E8E /* Group@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +639,102 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16C0CA925781A637AAF886B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uTrackTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3803F82B73F33FD820FB7957 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uTrack/Pods-uTrack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uTrack/Pods-uTrack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817849AA6EE4DA78B3D9A944 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uTrack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE42984E8C308FE3C4AC5130 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uTrackUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		343041AF20433CDC0077289F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				343041B920433CDC0077289F /* ViewController.swift in Sources */,
-				343041BF20433CDC0077289F /* uTrack.xcdatamodeld in Sources */,
+				34F562F320912C4B001BA07B /* OnlineStatusTableViewController.swift in Sources */,
+				349B8279209D73D70012B601 /* AroundMeViewController.swift in Sources */,
+				3413BDEA2045272F00E47BD9 /* AuthorizationViewController.swift in Sources */,
+				345CC220209E0E2C00BE6CAF /* NotificationHandler.swift in Sources */,
+				348953C6208ED58100EFE20C /* ItemInfoViewController.swift in Sources */,
+				34A4B92B209AD23800CE6217 /* InStockTableViewCell.swift in Sources */,
+				346D4A13208EF73D00BC7795 /* CheckStock.swift in Sources */,
+				34AA15CE2086963A00D0B4BE /* MainCollectionViewController.swift in Sources */,
+				344265F0207591BA00011DFD /* PresetItemsTableViewController.swift in Sources */,
+				3457779E2043B72B00A25106 /* ItemHandler.swift in Sources */,
+				3477B6FF20995E9A003308B9 /* FlowLayout.swift in Sources */,
 				343041B720433CDC0077289F /* AppDelegate.swift in Sources */,
+				344265F32075927A00011DFD /* SavedDataHandler.swift in Sources */,
+				341A35862088155700D2A4A9 /* TrackedItemCollectionViewCell.swift in Sources */,
+				342F90F5209C105B0011BBF1 /* WebViewController.swift in Sources */,
+				340756872044C02E00649C3D /* SetupProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +770,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		343041BA20433CDC0077289F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				343041BB20433CDC0077289F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		343041C220433CDC0077289F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -333,6 +795,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -340,6 +803,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -390,6 +854,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -397,6 +862,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -428,11 +894,14 @@
 		};
 		343041DF20433CDD0077289F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F99DFA53F5BACEA19DA753F4 /* Pods-uTrack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = uTrack/uTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
-				INFOPLIST_FILE = uTrack/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/uTrack/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CSC300MOJ.uTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,11 +912,14 @@
 		};
 		343041E020433CDD0077289F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5000E2B033E794FFB6153DAF /* Pods-uTrack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = uTrack/uTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
-				INFOPLIST_FILE = uTrack/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/uTrack/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CSC300MOJ.uTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -458,6 +930,7 @@
 		};
 		343041E220433CDD0077289F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDDC46849E464DE39E7AAC75 /* Pods-uTrackTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +948,7 @@
 		};
 		343041E320433CDD0077289F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CBE0D0FB95AFAD24EC5FC9 /* Pods-uTrackTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +966,7 @@
 		};
 		343041E520433CDD0077289F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDAA90A85B2CB90CDDB33CF6 /* Pods-uTrackUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +983,7 @@
 		};
 		343041E620433CDD0077289F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CFE7C6A105FDDB7BCEF49D4 /* Pods-uTrackUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
