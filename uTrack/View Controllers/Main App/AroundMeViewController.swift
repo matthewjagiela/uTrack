@@ -29,7 +29,7 @@ class AroundMeViewController: UIViewController {
         _ = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(findStores), userInfo: nil, repeats: false)
     }
     func zoomToLocation(){
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(mapView.userLocation.coordinate, regionRadius, regionRadius) //Zoomed To
+        let coordinateRegion = MKCoordinateRegion.init(center: mapView.userLocation.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius) //Zoomed To
         mapView.setRegion(coordinateRegion, animated: true) //set the region
         locationManager.startUpdatingLocation()
         mapView.setUserTrackingMode(.followWithHeading, animated: true)
@@ -38,7 +38,7 @@ class AroundMeViewController: UIViewController {
         var stores = ["Target","Best Buy Electronics", "Staples","Microcenter"]
         self.mapView.removeAnnotations(mapView.annotations) //Make sure previous annotations are removed
         for element in stores{
-            let searchRequest = MKLocalSearchRequest()
+            let searchRequest = MKLocalSearch.Request()
             searchRequest.naturalLanguageQuery = element
             searchRequest.region = mapView.region //Search within this region
             

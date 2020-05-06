@@ -146,7 +146,7 @@ class MainCollectionViewController: UICollectionViewController {
         return true
     }
  
-    override func prefersHomeIndicatorAutoHidden() -> Bool { //This way the label in the grid does not get cut off of by the iPhone X bar...
+    override var prefersHomeIndicatorAutoHidden: Bool { //This way the label in the grid does not get cut off of by the iPhone X bar...
         return false
     }
 

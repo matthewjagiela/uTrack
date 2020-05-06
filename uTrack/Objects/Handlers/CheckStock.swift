@@ -81,10 +81,10 @@ class CheckStock: NSObject {
                                         print("Adding text: \(text)")
                                         print("index == \(index)")
                                         if(index == 0){ //Name›
-                                            if let i = text.index(of: "("){
+                                            if let i = text.firstIndex(of: "("){
                                                 text.remove(at: i)
                                             }
-                                            if let i = text.index(of: ")"){
+                                            if let i = text.firstIndex(of: ")"){
                                                 text.remove(at: i)
                                             }
                                             nameLocalArray.add(text)
