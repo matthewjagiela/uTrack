@@ -2,35 +2,32 @@
 //  uTrackTests.swift
 //  uTrackTests
 //
-//  Created by Matthew Jagiela on 2/25/18.
-//  Copyright © 2018 Matthew Jagiela. All rights reserved.
+//  Created by Matthew Jagiela on 2/6/21.
 //
 
 import XCTest
 @testable import uTrack
 
 class uTrackTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
+
+    override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-    
-    override func tearDown() {
+
+    override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
     }
-    
-    func testExample() {
+
+    func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
-    func testPerformanceExample() {
+
+    func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
-    
+
 }
