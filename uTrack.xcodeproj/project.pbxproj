@@ -18,7 +18,6 @@
 		2E2A07FE25CF95AD007EEE30 /* uTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A07FD25CF95AD007EEE30 /* uTrackTests.swift */; };
 		2E2A080925CF95AD007EEE30 /* uTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A080825CF95AD007EEE30 /* uTrackUITests.swift */; };
 		2E3EDEDD2FCDC647CEF751E1 /* Pods_uTrack_uTrackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08957B078A2D4AA148D93003 /* Pods_uTrack_uTrackUITests.framework */; };
-		2EAE9E8225D238F1002C19DF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE9E8125D238F1002C19DF /* .swiftlint.yml */; };
 		2EC3CB2925D0F608001F95E9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC3CB2825D0F608001F95E9 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +55,6 @@
 		2E2A080425CF95AD007EEE30 /* uTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2A080825CF95AD007EEE30 /* uTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uTrackUITests.swift; sourceTree = "<group>"; };
 		2E2A080A25CF95AD007EEE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EAE9E8125D238F1002C19DF /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		2EC3CB2725D0F602001F95E9 /* uTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uTrack.entitlements; sourceTree = "<group>"; };
 		2EC3CB2825D0F608001F95E9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		5699113D43C2E8C003A316B6 /* Pods-uTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack.debug.xcconfig"; path = "Target Support Files/Pods-uTrack/Pods-uTrack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 		2E2A07DA25CF95AC007EEE30 = {
 			isa = PBXGroup;
 			children = (
-				2EAE9E8125D238F1002C19DF /* .swiftlint.yml */,
 				2E2A07E525CF95AC007EEE30 /* uTrack */,
 				2E2A07FC25CF95AD007EEE30 /* uTrackTests */,
 				2E2A080725CF95AD007EEE30 /* uTrackUITests */,
@@ -229,7 +226,6 @@
 				2E2A07E025CF95AC007EEE30 /* Frameworks */,
 				2E2A07E125CF95AC007EEE30 /* Resources */,
 				9676559EC5B440C0DD490A29 /* [CP] Embed Pods Frameworks */,
-				2EAE9E9725D23924002C19DF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -326,7 +322,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EAE9E8225D238F1002C19DF /* .swiftlint.yml in Resources */,
 				2E2A07F325CF95AD007EEE30 /* LaunchScreen.storyboard in Resources */,
 				2E2A07F025CF95AD007EEE30 /* Assets.xcassets in Resources */,
 				2E2A07EE25CF95AC007EEE30 /* Main.storyboard in Resources */,
@@ -371,23 +366,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		2EAE9E9725D23924002C19DF /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		458FB0A3A0D937C5B61CC505 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
