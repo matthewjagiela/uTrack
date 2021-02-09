@@ -7,7 +7,7 @@
 
 import UIKit
 import SwiftUI
-class ViewController: UIViewController {
+class IntroViewController: UIViewController {
     var hostingView: UIHostingController<IntroView>?
     override func viewDidLoad() {
         super.viewDidLoad()
