@@ -3,184 +3,474 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1780BAD0B7B8BF1D64612785 /* Pods_uTrackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7A0253BDAE531ED64B0CD3 /* Pods_uTrackTests.framework */; };
-		1C1728264D21146AF314A67B /* Pods_uTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05FF4E5386EA2E5088CE5E2 /* Pods_uTrack.framework */; };
-		2E2A07E725CF95AC007EEE30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A07E625CF95AC007EEE30 /* AppDelegate.swift */; };
-		2E2A07E925CF95AC007EEE30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A07E825CF95AC007EEE30 /* SceneDelegate.swift */; };
-		2E2A07EB25CF95AC007EEE30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A07EA25CF95AC007EEE30 /* ViewController.swift */; };
-		2E2A07EE25CF95AC007EEE30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A07EC25CF95AC007EEE30 /* Main.storyboard */; };
-		2E2A07F025CF95AD007EEE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A07EF25CF95AD007EEE30 /* Assets.xcassets */; };
-		2E2A07F325CF95AD007EEE30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A07F125CF95AD007EEE30 /* LaunchScreen.storyboard */; };
-		2E2A07FE25CF95AD007EEE30 /* uTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A07FD25CF95AD007EEE30 /* uTrackTests.swift */; };
-		2E2A080925CF95AD007EEE30 /* uTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A080825CF95AD007EEE30 /* uTrackUITests.swift */; };
-		2E3EDEDD2FCDC647CEF751E1 /* Pods_uTrack_uTrackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08957B078A2D4AA148D93003 /* Pods_uTrack_uTrackUITests.framework */; };
+		340756872044C02E00649C3D /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340756862044C02E00649C3D /* SetupProfileViewController.swift */; };
+		3413BDEA2045272F00E47BD9 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413BDE92045272F00E47BD9 /* AuthorizationViewController.swift */; };
+		341A35862088155700D2A4A9 /* TrackedItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341A35852088155700D2A4A9 /* TrackedItemCollectionViewCell.swift */; };
+		342F90F5209C105B0011BBF1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F90F4209C105B0011BBF1 /* WebViewController.swift */; };
+		343041B720433CDC0077289F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343041B620433CDC0077289F /* AppDelegate.swift */; };
+		343041C120433CDC0077289F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343041C020433CDC0077289F /* Assets.xcassets */; };
+		343041C420433CDC0077289F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343041C220433CDC0077289F /* LaunchScreen.storyboard */; };
+		343041CF20433CDD0077289F /* uTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343041CE20433CDD0077289F /* uTrackTests.swift */; };
+		343041DA20433CDD0077289F /* uTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343041D920433CDD0077289F /* uTrackUITests.swift */; };
+		343041EE204340420077289F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343041ED204340420077289F /* Main.storyboard */; };
+		343041F6204344900077289F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343041F5204344900077289F /* MapKit.framework */; };
+		344265F0207591BA00011DFD /* PresetItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344265EF207591BA00011DFD /* PresetItemsTableViewController.swift */; };
+		344265F32075927A00011DFD /* SavedDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344265F22075927A00011DFD /* SavedDataHandler.swift */; };
+		344265FB2075A64500011DFD /* icon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265F52075A64500011DFD /* icon_iPad.png */; };
+		344265FC2075A64500011DFD /* iPhone3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265F62075A64500011DFD /* iPhone3x.png */; };
+		344265FD2075A64500011DFD /* icon_iPadPro.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265F72075A64500011DFD /* icon_iPadPro.png */; };
+		344265FE2075A64500011DFD /* iPhone2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265F82075A64500011DFD /* iPhone2x.png */; };
+		344265FF2075A64500011DFD /* main_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265F92075A64500011DFD /* main_icon.png */; };
+		344266002075A64500011DFD /* icon_iPad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344265FA2075A64500011DFD /* icon_iPad2x.png */; };
+		3457779E2043B72B00A25106 /* ItemHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3457779D2043B72B00A25106 /* ItemHandler.swift */; };
+		345CC220209E0E2C00BE6CAF /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CC21F209E0E2C00BE6CAF /* NotificationHandler.swift */; };
+		346D4A13208EF73D00BC7795 /* CheckStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D4A12208EF73D00BC7795 /* CheckStock.swift */; };
+		3477B6FF20995E9A003308B9 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3477B6FE20995E9A003308B9 /* FlowLayout.swift */; };
+		348953C6208ED58100EFE20C /* ItemInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348953C5208ED58100EFE20C /* ItemInfoViewController.swift */; };
+		349B8277209D6DF50012B601 /* X Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 349B8276209D6DF50012B601 /* X Icon.png */; };
+		349B8279209D73D70012B601 /* AroundMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B8278209D73D70012B601 /* AroundMeViewController.swift */; };
+		34A4B921209ACA8800CE6217 /* logo_424x210.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B91C209ACA8600CE6217 /* logo_424x210.png */; };
+		34A4B922209ACA8800CE6217 /* GameStop.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B91D209ACA8700CE6217 /* GameStop.svg.png */; };
+		34A4B923209ACA8800CE6217 /* Microsoft-Logo-icon-png-Transparent-Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B91E209ACA8700CE6217 /* Microsoft-Logo-icon-png-Transparent-Background.png */; };
+		34A4B924209ACA8800CE6217 /* 1280px-B&H_Foto_&_Electronics_Logo.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B91F209ACA8800CE6217 /* 1280px-B&H_Foto_&_Electronics_Logo.svg.png */; };
+		34A4B925209ACA8800CE6217 /* 2000px-Best_Buy_Logo.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B920209ACA8800CE6217 /* 2000px-Best_Buy_Logo.svg.png */; };
+		34A4B927209ACB8F00CE6217 /* Amazon-A-Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B926209ACB8F00CE6217 /* Amazon-A-Logo.jpg */; };
+		34A4B929209ACF1C00CE6217 /* Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4B928209ACF1B00CE6217 /* Checkmark.png */; };
+		34A4B92B209AD23800CE6217 /* InStockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4B92A209AD23800CE6217 /* InStockTableViewCell.swift */; };
+		34AA15CE2086963A00D0B4BE /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA15CD2086963A00D0B4BE /* MainCollectionViewController.swift */; };
+		34B5302D208702AF005208A9 /* SNES Classic Edition.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53021208702AD005208A9 /* SNES Classic Edition.png */; };
+		34B5302E208702AF005208A9 /* NVIDIA GTX 1070TI.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53022208702AD005208A9 /* NVIDIA GTX 1070TI.png */; };
+		34B5302F208702AF005208A9 /* Airpods.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53023208702AE005208A9 /* Airpods.png */; };
+		34B53030208702AF005208A9 /* NVIDIA GTX 1050TI.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53024208702AE005208A9 /* NVIDIA GTX 1050TI.png */; };
+		34B53032208702AF005208A9 /* Xbox One X.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53026208702AE005208A9 /* Xbox One X.png */; };
+		34B53033208702AF005208A9 /* NVIDIA GTX 1060.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53027208702AE005208A9 /* NVIDIA GTX 1060.png */; };
+		34B53034208702AF005208A9 /* Nintendo Switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53028208702AF005208A9 /* Nintendo Switch.png */; };
+		34B53035208702AF005208A9 /* NVIDIA GTX 1050.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53029208702AF005208A9 /* NVIDIA GTX 1050.png */; };
+		34B53036208702AF005208A9 /* NVIDIA GTX 1080.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B5302A208702AF005208A9 /* NVIDIA GTX 1080.png */; };
+		34B53037208702AF005208A9 /* NVIDIA GTX 1070.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B5302B208702AF005208A9 /* NVIDIA GTX 1070.png */; };
+		34B53038208702AF005208A9 /* PlayStation 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B5302C208702AF005208A9 /* PlayStation 4.png */; };
+		34B5303A208705A4005208A9 /* NVIDIA GTX 1080TI.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B53039208705A4005208A9 /* NVIDIA GTX 1080TI.png */; };
+		34F562E2209034BF001BA07B /* Info Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E0209034BE001BA07B /* Info Icon@2x.png */; };
+		34F562E3209034BF001BA07B /* Info Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E1209034BF001BA07B /* Info Icon@3x.png */; };
+		34F562E62090354C001BA07B /* Map Icon @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E42090354C001BA07B /* Map Icon @2x.png */; };
+		34F562E72090354C001BA07B /* Map Icon @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E52090354C001BA07B /* Map Icon @3x.png */; };
+		34F562EA209035F3001BA07B /* Globe Icon @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E8209035F1001BA07B /* Globe Icon @2x.png */; };
+		34F562EB209035F3001BA07B /* Globe Icon @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F562E9209035F2001BA07B /* Globe Icon @3x.png */; };
+		34F562F02090CF64001BA07B /* universe-wallpaper_wallpprs.com_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34F562EF2090CF64001BA07B /* universe-wallpaper_wallpprs.com_.jpg */; };
+		34F562F320912C4B001BA07B /* OnlineStatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F562F220912C4B001BA07B /* OnlineStatusTableViewController.swift */; };
+		34FD5B9C20880BEC00451E8E /* Group@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FD5B9920880BEC00451E8E /* Group@3x.png */; };
+		34FD5B9D20880BEC00451E8E /* Group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FD5B9A20880BEC00451E8E /* Group@2x.png */; };
+		34FD5B9E20880BEC00451E8E /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FD5B9B20880BEC00451E8E /* Group.png */; };
+		F1700B56A0751661A4C7E152 /* Pods_uTrackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7F3E64ABB91B5309B6BCA2 /* Pods_uTrackTests.framework */; };
+		F6D4225EFD9413F428ECA2D9 /* Pods_uTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30CFE24D9114434B5591CF2 /* Pods_uTrack.framework */; };
+		F7C2745D0D0470E112814EEB /* Pods_uTrackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52107ACE32887BCA03028E10 /* Pods_uTrackUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E2A07FA25CF95AD007EEE30 /* PBXContainerItemProxy */ = {
+		343041CB20433CDD0077289F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2E2A07DB25CF95AC007EEE30 /* Project object */;
+			containerPortal = 343041AB20433CDC0077289F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E2A07E225CF95AC007EEE30;
+			remoteGlobalIDString = 343041B220433CDC0077289F;
 			remoteInfo = uTrack;
 		};
-		2E2A080525CF95AD007EEE30 /* PBXContainerItemProxy */ = {
+		343041D620433CDD0077289F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2E2A07DB25CF95AC007EEE30 /* Project object */;
+			containerPortal = 343041AB20433CDC0077289F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E2A07E225CF95AC007EEE30;
+			remoteGlobalIDString = 343041B220433CDC0077289F;
 			remoteInfo = uTrack;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		077416D2125FD87085609BF5 /* Pods-uTrackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackTests.debug.xcconfig"; path = "Target Support Files/Pods-uTrackTests/Pods-uTrackTests.debug.xcconfig"; sourceTree = "<group>"; };
-		08957B078A2D4AA148D93003 /* Pods_uTrack_uTrackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uTrack_uTrackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E2A07E325CF95AC007EEE30 /* uTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E2A07E625CF95AC007EEE30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E2A07E825CF95AC007EEE30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E2A07EA25CF95AC007EEE30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2E2A07ED25CF95AC007EEE30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E2A07EF25CF95AD007EEE30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2E2A07F225CF95AD007EEE30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2E2A07F425CF95AD007EEE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E2A07F925CF95AD007EEE30 /* uTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E2A07FD25CF95AD007EEE30 /* uTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uTrackTests.swift; sourceTree = "<group>"; };
-		2E2A07FF25CF95AD007EEE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E2A080425CF95AD007EEE30 /* uTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E2A080825CF95AD007EEE30 /* uTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uTrackUITests.swift; sourceTree = "<group>"; };
-		2E2A080A25CF95AD007EEE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5699113D43C2E8C003A316B6 /* Pods-uTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack.debug.xcconfig"; path = "Target Support Files/Pods-uTrack/Pods-uTrack.debug.xcconfig"; sourceTree = "<group>"; };
-		A6858A6728139BA3CC1399DE /* Pods-uTrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackTests.release.xcconfig"; path = "Target Support Files/Pods-uTrackTests/Pods-uTrackTests.release.xcconfig"; sourceTree = "<group>"; };
-		B0684B0B110A55B431081485 /* Pods-uTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack.release.xcconfig"; path = "Target Support Files/Pods-uTrack/Pods-uTrack.release.xcconfig"; sourceTree = "<group>"; };
-		B2ECF389289C596946D0CBFE /* Pods-uTrack-uTrackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack-uTrackUITests.debug.xcconfig"; path = "Target Support Files/Pods-uTrack-uTrackUITests/Pods-uTrack-uTrackUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CB02F7F3206A3BA02C61336D /* Pods-uTrack-uTrackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack-uTrackUITests.release.xcconfig"; path = "Target Support Files/Pods-uTrack-uTrackUITests/Pods-uTrack-uTrackUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E05FF4E5386EA2E5088CE5E2 /* Pods_uTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA7A0253BDAE531ED64B0CD3 /* Pods_uTrackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uTrackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		340756862044C02E00649C3D /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
+		3413BDE92045272F00E47BD9 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		341A35852088155700D2A4A9 /* TrackedItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		342F90F4209C105B0011BBF1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		343041B320433CDC0077289F /* uTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		343041B620433CDC0077289F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		343041BE20433CDC0077289F /* uTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = uTrack.xcdatamodel; sourceTree = "<group>"; };
+		343041C020433CDC0077289F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		343041C320433CDC0077289F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		343041C520433CDC0077289F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343041CA20433CDD0077289F /* uTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		343041CE20433CDD0077289F /* uTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uTrackTests.swift; sourceTree = "<group>"; };
+		343041D020433CDD0077289F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343041D520433CDD0077289F /* uTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		343041D920433CDD0077289F /* uTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uTrackUITests.swift; sourceTree = "<group>"; };
+		343041DB20433CDD0077289F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343041ED204340420077289F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		343041F3204344840077289F /* uTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uTrack.entitlements; sourceTree = "<group>"; };
+		343041F5204344900077289F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		344265EF207591BA00011DFD /* PresetItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetItemsTableViewController.swift; sourceTree = "<group>"; };
+		344265F22075927A00011DFD /* SavedDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataHandler.swift; sourceTree = "<group>"; };
+		344265F52075A64500011DFD /* icon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPad.png; sourceTree = "<group>"; };
+		344265F62075A64500011DFD /* iPhone3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone3x.png; sourceTree = "<group>"; };
+		344265F72075A64500011DFD /* icon_iPadPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPadPro.png; sourceTree = "<group>"; };
+		344265F82075A64500011DFD /* iPhone2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone2x.png; sourceTree = "<group>"; };
+		344265F92075A64500011DFD /* main_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_icon.png; sourceTree = "<group>"; };
+		344265FA2075A64500011DFD /* icon_iPad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPad2x.png; sourceTree = "<group>"; };
+		3457779D2043B72B00A25106 /* ItemHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHandler.swift; sourceTree = "<group>"; };
+		345CC21F209E0E2C00BE6CAF /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		346D4A12208EF73D00BC7795 /* CheckStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckStock.swift; sourceTree = "<group>"; };
+		3477B6FE20995E9A003308B9 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		348953C5208ED58100EFE20C /* ItemInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoViewController.swift; sourceTree = "<group>"; };
+		349B8276209D6DF50012B601 /* X Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Icon.png"; sourceTree = "<group>"; };
+		349B8278209D73D70012B601 /* AroundMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundMeViewController.swift; sourceTree = "<group>"; };
+		34A4B91C209ACA8600CE6217 /* logo_424x210.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_424x210.png; sourceTree = "<group>"; };
+		34A4B91D209ACA8700CE6217 /* GameStop.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameStop.svg.png; sourceTree = "<group>"; };
+		34A4B91E209ACA8700CE6217 /* Microsoft-Logo-icon-png-Transparent-Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Microsoft-Logo-icon-png-Transparent-Background.png"; sourceTree = "<group>"; };
+		34A4B91F209ACA8800CE6217 /* 1280px-B&H_Foto_&_Electronics_Logo.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1280px-B&H_Foto_&_Electronics_Logo.svg.png"; sourceTree = "<group>"; };
+		34A4B920209ACA8800CE6217 /* 2000px-Best_Buy_Logo.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2000px-Best_Buy_Logo.svg.png"; sourceTree = "<group>"; };
+		34A4B926209ACB8F00CE6217 /* Amazon-A-Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amazon-A-Logo.jpg"; sourceTree = "<group>"; };
+		34A4B928209ACF1B00CE6217 /* Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checkmark.png; sourceTree = "<group>"; };
+		34A4B92A209AD23800CE6217 /* InStockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InStockTableViewCell.swift; sourceTree = "<group>"; };
+		34AA15CD2086963A00D0B4BE /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		34B53021208702AD005208A9 /* SNES Classic Edition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SNES Classic Edition.png"; sourceTree = "<group>"; };
+		34B53022208702AD005208A9 /* NVIDIA GTX 1070TI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1070TI.png"; sourceTree = "<group>"; };
+		34B53023208702AE005208A9 /* Airpods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Airpods.png; sourceTree = "<group>"; };
+		34B53024208702AE005208A9 /* NVIDIA GTX 1050TI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1050TI.png"; sourceTree = "<group>"; };
+		34B53026208702AE005208A9 /* Xbox One X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Xbox One X.png"; sourceTree = "<group>"; };
+		34B53027208702AE005208A9 /* NVIDIA GTX 1060.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1060.png"; sourceTree = "<group>"; };
+		34B53028208702AF005208A9 /* Nintendo Switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nintendo Switch.png"; sourceTree = "<group>"; };
+		34B53029208702AF005208A9 /* NVIDIA GTX 1050.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1050.png"; sourceTree = "<group>"; };
+		34B5302A208702AF005208A9 /* NVIDIA GTX 1080.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1080.png"; sourceTree = "<group>"; };
+		34B5302B208702AF005208A9 /* NVIDIA GTX 1070.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1070.png"; sourceTree = "<group>"; };
+		34B5302C208702AF005208A9 /* PlayStation 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayStation 4.png"; sourceTree = "<group>"; };
+		34B53039208705A4005208A9 /* NVIDIA GTX 1080TI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NVIDIA GTX 1080TI.png"; sourceTree = "<group>"; };
+		34F562E0209034BE001BA07B /* Info Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info Icon@2x.png"; sourceTree = "<group>"; };
+		34F562E1209034BF001BA07B /* Info Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info Icon@3x.png"; sourceTree = "<group>"; };
+		34F562E42090354C001BA07B /* Map Icon @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map Icon @2x.png"; sourceTree = "<group>"; };
+		34F562E52090354C001BA07B /* Map Icon @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map Icon @3x.png"; sourceTree = "<group>"; };
+		34F562E8209035F1001BA07B /* Globe Icon @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Globe Icon @2x.png"; sourceTree = "<group>"; };
+		34F562E9209035F2001BA07B /* Globe Icon @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Globe Icon @3x.png"; sourceTree = "<group>"; };
+		34F562EF2090CF64001BA07B /* universe-wallpaper_wallpprs.com_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "universe-wallpaper_wallpprs.com_.jpg"; sourceTree = "<group>"; };
+		34F562F220912C4B001BA07B /* OnlineStatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineStatusTableViewController.swift; sourceTree = "<group>"; };
+		34FD5B9920880BEC00451E8E /* Group@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group@3x.png"; sourceTree = "<group>"; };
+		34FD5B9A20880BEC00451E8E /* Group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group@2x.png"; sourceTree = "<group>"; };
+		34FD5B9B20880BEC00451E8E /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Group.png; sourceTree = "<group>"; };
+		5000E2B033E794FFB6153DAF /* Pods-uTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-uTrack/Pods-uTrack.release.xcconfig"; sourceTree = "<group>"; };
+		52107ACE32887BCA03028E10 /* Pods_uTrackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uTrackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CFE7C6A105FDDB7BCEF49D4 /* Pods-uTrackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-uTrackUITests/Pods-uTrackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		94CBE0D0FB95AFAD24EC5FC9 /* Pods-uTrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-uTrackTests/Pods-uTrackTests.release.xcconfig"; sourceTree = "<group>"; };
+		B30CFE24D9114434B5591CF2 /* Pods_uTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7F3E64ABB91B5309B6BCA2 /* Pods_uTrackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uTrackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAA90A85B2CB90CDDB33CF6 /* Pods-uTrackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uTrackUITests/Pods-uTrackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDDC46849E464DE39E7AAC75 /* Pods-uTrackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uTrackTests/Pods-uTrackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F99DFA53F5BACEA19DA753F4 /* Pods-uTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uTrack/Pods-uTrack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2E2A07E025CF95AC007EEE30 /* Frameworks */ = {
+		343041B020433CDC0077289F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C1728264D21146AF314A67B /* Pods_uTrack.framework in Frameworks */,
+				343041F6204344900077289F /* MapKit.framework in Frameworks */,
+				F6D4225EFD9413F428ECA2D9 /* Pods_uTrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E2A07F625CF95AD007EEE30 /* Frameworks */ = {
+		343041C720433CDD0077289F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1780BAD0B7B8BF1D64612785 /* Pods_uTrackTests.framework in Frameworks */,
+				F1700B56A0751661A4C7E152 /* Pods_uTrackTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E2A080125CF95AD007EEE30 /* Frameworks */ = {
+		343041D220433CDD0077289F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E3EDEDD2FCDC647CEF751E1 /* Pods_uTrack_uTrackUITests.framework in Frameworks */,
+				F7C2745D0D0470E112814EEB /* Pods_uTrackUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E2A07DA25CF95AC007EEE30 = {
+		21AA67785B9F9972481C8E0C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2E2A07E525CF95AC007EEE30 /* uTrack */,
-				2E2A07FC25CF95AD007EEE30 /* uTrackTests */,
-				2E2A080725CF95AD007EEE30 /* uTrackUITests */,
-				2E2A07E425CF95AC007EEE30 /* Products */,
-				F13BE7D800B500E44BE8430F /* Pods */,
-				8F6B99E8D9BA47E244A2A77B /* Frameworks */,
+				F99DFA53F5BACEA19DA753F4 /* Pods-uTrack.debug.xcconfig */,
+				5000E2B033E794FFB6153DAF /* Pods-uTrack.release.xcconfig */,
+				DDDC46849E464DE39E7AAC75 /* Pods-uTrackTests.debug.xcconfig */,
+				94CBE0D0FB95AFAD24EC5FC9 /* Pods-uTrackTests.release.xcconfig */,
+				DDAA90A85B2CB90CDDB33CF6 /* Pods-uTrackUITests.debug.xcconfig */,
+				5CFE7C6A105FDDB7BCEF49D4 /* Pods-uTrackUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		340756832044BFF600649C3D /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				340756862044C02E00649C3D /* SetupProfileViewController.swift */,
+				3413BDE92045272F00E47BD9 /* AuthorizationViewController.swift */,
+				344265EF207591BA00011DFD /* PresetItemsTableViewController.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		340756842044BFFD00649C3D /* Main App */ = {
+			isa = PBXGroup;
+			children = (
+				34AA15CD2086963A00D0B4BE /* MainCollectionViewController.swift */,
+				348953C5208ED58100EFE20C /* ItemInfoViewController.swift */,
+				34F562F220912C4B001BA07B /* OnlineStatusTableViewController.swift */,
+				342F90F4209C105B0011BBF1 /* WebViewController.swift */,
+				349B8278209D73D70012B601 /* AroundMeViewController.swift */,
+			);
+			path = "Main App";
+			sourceTree = "<group>";
+		};
+		341A35832088153B00D2A4A9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				341A35852088155700D2A4A9 /* TrackedItemCollectionViewCell.swift */,
+				3477B6FE20995E9A003308B9 /* FlowLayout.swift */,
+				34A4B92A209AD23800CE6217 /* InStockTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		343041AA20433CDC0077289F = {
+			isa = PBXGroup;
+			children = (
+				343041B520433CDC0077289F /* uTrack */,
+				343041CD20433CDD0077289F /* uTrackTests */,
+				343041D820433CDD0077289F /* uTrackUITests */,
+				343041B420433CDC0077289F /* Products */,
+				343041F4204344900077289F /* Frameworks */,
+				21AA67785B9F9972481C8E0C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
-		2E2A07E425CF95AC007EEE30 /* Products */ = {
+		343041B420433CDC0077289F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E2A07E325CF95AC007EEE30 /* uTrack.app */,
-				2E2A07F925CF95AD007EEE30 /* uTrackTests.xctest */,
-				2E2A080425CF95AD007EEE30 /* uTrackUITests.xctest */,
+				343041B320433CDC0077289F /* uTrack.app */,
+				343041CA20433CDD0077289F /* uTrackTests.xctest */,
+				343041D520433CDD0077289F /* uTrackUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E2A07E525CF95AC007EEE30 /* uTrack */ = {
+		343041B520433CDC0077289F /* uTrack */ = {
 			isa = PBXGroup;
 			children = (
-				2E2A07E625CF95AC007EEE30 /* AppDelegate.swift */,
-				2E2A07E825CF95AC007EEE30 /* SceneDelegate.swift */,
-				2E2A07EA25CF95AC007EEE30 /* ViewController.swift */,
-				2E2A07EC25CF95AC007EEE30 /* Main.storyboard */,
-				2E2A07EF25CF95AD007EEE30 /* Assets.xcassets */,
-				2E2A07F125CF95AD007EEE30 /* LaunchScreen.storyboard */,
-				2E2A07F425CF95AD007EEE30 /* Info.plist */,
+				343041F3204344840077289F /* uTrack.entitlements */,
+				341A35832088153B00D2A4A9 /* Cells */,
+				343041EC20433E8D0077289F /* Views */,
+				343041EB20433E800077289F /* View Controllers */,
+				343041EA20433E790077289F /* Objects */,
+				343041E920433E6C0077289F /* Delegate */,
+				343041E820433CFD0077289F /* Other */,
+				343041E720433CF00077289F /* Images */,
 			);
 			path = uTrack;
 			sourceTree = "<group>";
 		};
-		2E2A07FC25CF95AD007EEE30 /* uTrackTests */ = {
+		343041CD20433CDD0077289F /* uTrackTests */ = {
 			isa = PBXGroup;
 			children = (
-				2E2A07FD25CF95AD007EEE30 /* uTrackTests.swift */,
-				2E2A07FF25CF95AD007EEE30 /* Info.plist */,
+				343041CE20433CDD0077289F /* uTrackTests.swift */,
+				343041D020433CDD0077289F /* Info.plist */,
 			);
 			path = uTrackTests;
 			sourceTree = "<group>";
 		};
-		2E2A080725CF95AD007EEE30 /* uTrackUITests */ = {
+		343041D820433CDD0077289F /* uTrackUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2E2A080825CF95AD007EEE30 /* uTrackUITests.swift */,
-				2E2A080A25CF95AD007EEE30 /* Info.plist */,
+				343041D920433CDD0077289F /* uTrackUITests.swift */,
+				343041DB20433CDD0077289F /* Info.plist */,
 			);
 			path = uTrackUITests;
 			sourceTree = "<group>";
 		};
-		8F6B99E8D9BA47E244A2A77B /* Frameworks */ = {
+		343041E720433CF00077289F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				E05FF4E5386EA2E5088CE5E2 /* Pods_uTrack.framework */,
-				08957B078A2D4AA148D93003 /* Pods_uTrack_uTrackUITests.framework */,
-				FA7A0253BDAE531ED64B0CD3 /* Pods_uTrackTests.framework */,
+				349B8276209D6DF50012B601 /* X Icon.png */,
+				34A4B928209ACF1B00CE6217 /* Checkmark.png */,
+				34A4B91B209ACA6400CE6217 /* Store Images */,
+				34F562EF2090CF64001BA07B /* universe-wallpaper_wallpprs.com_.jpg */,
+				34F562EE2090CC47001BA07B /* Info Images */,
+				34F562ED2090CC37001BA07B /* Globe Images */,
+				34F562EC2090CC2E001BA07B /* Map Images */,
+				34FD5B9820880BD700451E8E /* Delete Button */,
+				34AA15C62086641D00D0B4BE /* Product Images */,
+				344265F42075A63200011DFD /* Icon */,
+				343041C020433CDC0077289F /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		343041E820433CFD0077289F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				343041C520433CDC0077289F /* Info.plist */,
+				343041BD20433CDC0077289F /* uTrack.xcdatamodeld */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		343041E920433E6C0077289F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				343041B620433CDC0077289F /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		343041EA20433E790077289F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				344265F12075926500011DFD /* Handlers */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		343041EB20433E800077289F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				340756842044BFFD00649C3D /* Main App */,
+				340756832044BFF600649C3D /* Setup */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		343041EC20433E8D0077289F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				343041ED204340420077289F /* Main.storyboard */,
+				343041C220433CDC0077289F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		343041F4204344900077289F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				343041F5204344900077289F /* MapKit.framework */,
+				B30CFE24D9114434B5591CF2 /* Pods_uTrack.framework */,
+				DD7F3E64ABB91B5309B6BCA2 /* Pods_uTrackTests.framework */,
+				52107ACE32887BCA03028E10 /* Pods_uTrackUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F13BE7D800B500E44BE8430F /* Pods */ = {
+		344265F12075926500011DFD /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				5699113D43C2E8C003A316B6 /* Pods-uTrack.debug.xcconfig */,
-				B0684B0B110A55B431081485 /* Pods-uTrack.release.xcconfig */,
-				B2ECF389289C596946D0CBFE /* Pods-uTrack-uTrackUITests.debug.xcconfig */,
-				CB02F7F3206A3BA02C61336D /* Pods-uTrack-uTrackUITests.release.xcconfig */,
-				077416D2125FD87085609BF5 /* Pods-uTrackTests.debug.xcconfig */,
-				A6858A6728139BA3CC1399DE /* Pods-uTrackTests.release.xcconfig */,
+				3457779D2043B72B00A25106 /* ItemHandler.swift */,
+				344265F22075927A00011DFD /* SavedDataHandler.swift */,
+				346D4A12208EF73D00BC7795 /* CheckStock.swift */,
+				345CC21F209E0E2C00BE6CAF /* NotificationHandler.swift */,
 			);
-			name = Pods;
-			path = Pods;
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		344265F42075A63200011DFD /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				344265F52075A64500011DFD /* icon_iPad.png */,
+				344265FA2075A64500011DFD /* icon_iPad2x.png */,
+				344265F72075A64500011DFD /* icon_iPadPro.png */,
+				344265F82075A64500011DFD /* iPhone2x.png */,
+				344265F62075A64500011DFD /* iPhone3x.png */,
+				344265F92075A64500011DFD /* main_icon.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		34A4B91B209ACA6400CE6217 /* Store Images */ = {
+			isa = PBXGroup;
+			children = (
+				34A4B926209ACB8F00CE6217 /* Amazon-A-Logo.jpg */,
+				34A4B91F209ACA8800CE6217 /* 1280px-B&H_Foto_&_Electronics_Logo.svg.png */,
+				34A4B920209ACA8800CE6217 /* 2000px-Best_Buy_Logo.svg.png */,
+				34A4B91D209ACA8700CE6217 /* GameStop.svg.png */,
+				34A4B91C209ACA8600CE6217 /* logo_424x210.png */,
+				34A4B91E209ACA8700CE6217 /* Microsoft-Logo-icon-png-Transparent-Background.png */,
+			);
+			path = "Store Images";
+			sourceTree = "<group>";
+		};
+		34AA15C62086641D00D0B4BE /* Product Images */ = {
+			isa = PBXGroup;
+			children = (
+				34B53023208702AE005208A9 /* Airpods.png */,
+				34B53028208702AF005208A9 /* Nintendo Switch.png */,
+				34B53029208702AF005208A9 /* NVIDIA GTX 1050.png */,
+				34B53024208702AE005208A9 /* NVIDIA GTX 1050TI.png */,
+				34B53027208702AE005208A9 /* NVIDIA GTX 1060.png */,
+				34B5302B208702AF005208A9 /* NVIDIA GTX 1070.png */,
+				34B53022208702AD005208A9 /* NVIDIA GTX 1070TI.png */,
+				34B5302A208702AF005208A9 /* NVIDIA GTX 1080.png */,
+				34B53039208705A4005208A9 /* NVIDIA GTX 1080TI.png */,
+				34B5302C208702AF005208A9 /* PlayStation 4.png */,
+				34B53021208702AD005208A9 /* SNES Classic Edition.png */,
+				34B53026208702AE005208A9 /* Xbox One X.png */,
+			);
+			path = "Product Images";
+			sourceTree = "<group>";
+		};
+		34F562EC2090CC2E001BA07B /* Map Images */ = {
+			isa = PBXGroup;
+			children = (
+				34F562E42090354C001BA07B /* Map Icon @2x.png */,
+				34F562E52090354C001BA07B /* Map Icon @3x.png */,
+			);
+			path = "Map Images";
+			sourceTree = "<group>";
+		};
+		34F562ED2090CC37001BA07B /* Globe Images */ = {
+			isa = PBXGroup;
+			children = (
+				34F562E8209035F1001BA07B /* Globe Icon @2x.png */,
+				34F562E9209035F2001BA07B /* Globe Icon @3x.png */,
+			);
+			path = "Globe Images";
+			sourceTree = "<group>";
+		};
+		34F562EE2090CC47001BA07B /* Info Images */ = {
+			isa = PBXGroup;
+			children = (
+				34F562E0209034BE001BA07B /* Info Icon@2x.png */,
+				34F562E1209034BF001BA07B /* Info Icon@3x.png */,
+			);
+			path = "Info Images";
+			sourceTree = "<group>";
+		};
+		34FD5B9820880BD700451E8E /* Delete Button */ = {
+			isa = PBXGroup;
+			children = (
+				34FD5B9B20880BEC00451E8E /* Group.png */,
+				34FD5B9A20880BEC00451E8E /* Group@2x.png */,
+				34FD5B9920880BEC00451E8E /* Group@3x.png */,
+			);
+			path = "Delete Button";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E2A07E225CF95AC007EEE30 /* uTrack */ = {
+		343041B220433CDC0077289F /* uTrack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E2A080D25CF95AD007EEE30 /* Build configuration list for PBXNativeTarget "uTrack" */;
+			buildConfigurationList = 343041DE20433CDD0077289F /* Build configuration list for PBXNativeTarget "uTrack" */;
 			buildPhases = (
-				88FCFA1152B0846F22F63F99 /* [CP] Check Pods Manifest.lock */,
-				2E2A07DF25CF95AC007EEE30 /* Sources */,
-				2E2A07E025CF95AC007EEE30 /* Frameworks */,
-				2E2A07E125CF95AC007EEE30 /* Resources */,
-				9676559EC5B440C0DD490A29 /* [CP] Embed Pods Frameworks */,
+				817849AA6EE4DA78B3D9A944 /* [CP] Check Pods Manifest.lock */,
+				343041AF20433CDC0077289F /* Sources */,
+				343041B020433CDC0077289F /* Frameworks */,
+				343041B120433CDC0077289F /* Resources */,
+				3803F82B73F33FD820FB7957 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,109 +478,162 @@
 			);
 			name = uTrack;
 			productName = uTrack;
-			productReference = 2E2A07E325CF95AC007EEE30 /* uTrack.app */;
+			productReference = 343041B320433CDC0077289F /* uTrack.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2E2A07F825CF95AD007EEE30 /* uTrackTests */ = {
+		343041C920433CDD0077289F /* uTrackTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E2A081025CF95AD007EEE30 /* Build configuration list for PBXNativeTarget "uTrackTests" */;
+			buildConfigurationList = 343041E120433CDD0077289F /* Build configuration list for PBXNativeTarget "uTrackTests" */;
 			buildPhases = (
-				1F59973AB574C487B8A4EF48 /* [CP] Check Pods Manifest.lock */,
-				2E2A07F525CF95AD007EEE30 /* Sources */,
-				2E2A07F625CF95AD007EEE30 /* Frameworks */,
-				2E2A07F725CF95AD007EEE30 /* Resources */,
+				16C0CA925781A637AAF886B8 /* [CP] Check Pods Manifest.lock */,
+				343041C620433CDD0077289F /* Sources */,
+				343041C720433CDD0077289F /* Frameworks */,
+				343041C820433CDD0077289F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2E2A07FB25CF95AD007EEE30 /* PBXTargetDependency */,
+				343041CC20433CDD0077289F /* PBXTargetDependency */,
 			);
 			name = uTrackTests;
 			productName = uTrackTests;
-			productReference = 2E2A07F925CF95AD007EEE30 /* uTrackTests.xctest */;
+			productReference = 343041CA20433CDD0077289F /* uTrackTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2E2A080325CF95AD007EEE30 /* uTrackUITests */ = {
+		343041D420433CDD0077289F /* uTrackUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E2A081325CF95AD007EEE30 /* Build configuration list for PBXNativeTarget "uTrackUITests" */;
+			buildConfigurationList = 343041E420433CDD0077289F /* Build configuration list for PBXNativeTarget "uTrackUITests" */;
 			buildPhases = (
-				458FB0A3A0D937C5B61CC505 /* [CP] Check Pods Manifest.lock */,
-				2E2A080025CF95AD007EEE30 /* Sources */,
-				2E2A080125CF95AD007EEE30 /* Frameworks */,
-				2E2A080225CF95AD007EEE30 /* Resources */,
-				9355ABE2B920A955E8F66CD5 /* [CP] Embed Pods Frameworks */,
+				DE42984E8C308FE3C4AC5130 /* [CP] Check Pods Manifest.lock */,
+				343041D120433CDD0077289F /* Sources */,
+				343041D220433CDD0077289F /* Frameworks */,
+				343041D320433CDD0077289F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2E2A080625CF95AD007EEE30 /* PBXTargetDependency */,
+				343041D720433CDD0077289F /* PBXTargetDependency */,
 			);
 			name = uTrackUITests;
 			productName = uTrackUITests;
-			productReference = 2E2A080425CF95AD007EEE30 /* uTrackUITests.xctest */;
+			productReference = 343041D520433CDD0077289F /* uTrackUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2E2A07DB25CF95AC007EEE30 /* Project object */ = {
+		343041AB20433CDC0077289F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Matthew Jagiela";
 				TargetAttributes = {
-					2E2A07E225CF95AC007EEE30 = {
-						CreatedOnToolsVersion = 12.4;
+					343041B220433CDC0077289F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
-					2E2A07F825CF95AD007EEE30 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 2E2A07E225CF95AC007EEE30;
+					343041C920433CDD0077289F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 343041B220433CDC0077289F;
 					};
-					2E2A080325CF95AD007EEE30 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 2E2A07E225CF95AC007EEE30;
+					343041D420433CDD0077289F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 343041B220433CDC0077289F;
 					};
 				};
 			};
-			buildConfigurationList = 2E2A07DE25CF95AC007EEE30 /* Build configuration list for PBXProject "uTrack" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 343041AE20433CDC0077289F /* Build configuration list for PBXProject "uTrack" */;
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 2E2A07DA25CF95AC007EEE30;
-			productRefGroup = 2E2A07E425CF95AC007EEE30 /* Products */;
+			mainGroup = 343041AA20433CDC0077289F;
+			productRefGroup = 343041B420433CDC0077289F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E2A07E225CF95AC007EEE30 /* uTrack */,
-				2E2A07F825CF95AD007EEE30 /* uTrackTests */,
-				2E2A080325CF95AD007EEE30 /* uTrackUITests */,
+				343041B220433CDC0077289F /* uTrack */,
+				343041C920433CDD0077289F /* uTrackTests */,
+				343041D420433CDD0077289F /* uTrackUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2E2A07E125CF95AC007EEE30 /* Resources */ = {
+		343041B120433CDC0077289F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2A07F325CF95AD007EEE30 /* LaunchScreen.storyboard in Resources */,
-				2E2A07F025CF95AD007EEE30 /* Assets.xcassets in Resources */,
-				2E2A07EE25CF95AC007EEE30 /* Main.storyboard in Resources */,
+				34B53030208702AF005208A9 /* NVIDIA GTX 1050TI.png in Resources */,
+				34FD5B9E20880BEC00451E8E /* Group.png in Resources */,
+				34B5302F208702AF005208A9 /* Airpods.png in Resources */,
+				34A4B924209ACA8800CE6217 /* 1280px-B&H_Foto_&_Electronics_Logo.svg.png in Resources */,
+				34B53034208702AF005208A9 /* Nintendo Switch.png in Resources */,
+				34A4B927209ACB8F00CE6217 /* Amazon-A-Logo.jpg in Resources */,
+				34A4B925209ACA8800CE6217 /* 2000px-Best_Buy_Logo.svg.png in Resources */,
+				34B5302E208702AF005208A9 /* NVIDIA GTX 1070TI.png in Resources */,
+				34F562F02090CF64001BA07B /* universe-wallpaper_wallpprs.com_.jpg in Resources */,
+				34B53038208702AF005208A9 /* PlayStation 4.png in Resources */,
+				344265FD2075A64500011DFD /* icon_iPadPro.png in Resources */,
+				344265FE2075A64500011DFD /* iPhone2x.png in Resources */,
+				34FD5B9C20880BEC00451E8E /* Group@3x.png in Resources */,
+				349B8277209D6DF50012B601 /* X Icon.png in Resources */,
+				34B5303A208705A4005208A9 /* NVIDIA GTX 1080TI.png in Resources */,
+				34B5302D208702AF005208A9 /* SNES Classic Edition.png in Resources */,
+				34B53035208702AF005208A9 /* NVIDIA GTX 1050.png in Resources */,
+				344266002075A64500011DFD /* icon_iPad2x.png in Resources */,
+				34A4B922209ACA8800CE6217 /* GameStop.svg.png in Resources */,
+				34F562E62090354C001BA07B /* Map Icon @2x.png in Resources */,
+				34F562E3209034BF001BA07B /* Info Icon@3x.png in Resources */,
+				343041EE204340420077289F /* Main.storyboard in Resources */,
+				34B53032208702AF005208A9 /* Xbox One X.png in Resources */,
+				34B53037208702AF005208A9 /* NVIDIA GTX 1070.png in Resources */,
+				34F562EB209035F3001BA07B /* Globe Icon @3x.png in Resources */,
+				344265FC2075A64500011DFD /* iPhone3x.png in Resources */,
+				34F562E2209034BF001BA07B /* Info Icon@2x.png in Resources */,
+				34B53033208702AF005208A9 /* NVIDIA GTX 1060.png in Resources */,
+				34A4B929209ACF1C00CE6217 /* Checkmark.png in Resources */,
+				343041C420433CDC0077289F /* LaunchScreen.storyboard in Resources */,
+				34A4B921209ACA8800CE6217 /* logo_424x210.png in Resources */,
+				34F562EA209035F3001BA07B /* Globe Icon @2x.png in Resources */,
+				34B53036208702AF005208A9 /* NVIDIA GTX 1080.png in Resources */,
+				344265FF2075A64500011DFD /* main_icon.png in Resources */,
+				34A4B923209ACA8800CE6217 /* Microsoft-Logo-icon-png-Transparent-Background.png in Resources */,
+				344265FB2075A64500011DFD /* icon_iPad.png in Resources */,
+				34F562E72090354C001BA07B /* Map Icon @3x.png in Resources */,
+				343041C120433CDC0077289F /* Assets.xcassets in Resources */,
+				34FD5B9D20880BEC00451E8E /* Group@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E2A07F725CF95AD007EEE30 /* Resources */ = {
+		343041C820433CDD0077289F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E2A080225CF95AD007EEE30 /* Resources */ = {
+		343041D320433CDD0077289F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -300,20 +643,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F59973AB574C487B8A4EF48 /* [CP] Check Pods Manifest.lock */ = {
+		16C0CA925781A637AAF886B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-uTrackTests-checkManifestLockResult.txt",
 			);
@@ -322,42 +661,34 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		458FB0A3A0D937C5B61CC505 /* [CP] Check Pods Manifest.lock */ = {
+		3803F82B73F33FD820FB7957 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-uTrack/Pods-uTrack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-uTrack-uTrackUITests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uTrack/Pods-uTrack-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		88FCFA1152B0846F22F63F99 /* [CP] Check Pods Manifest.lock */ = {
+		817849AA6EE4DA78B3D9A944 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-uTrack-checkManifestLockResult.txt",
 			);
@@ -366,97 +697,86 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9355ABE2B920A955E8F66CD5 /* [CP] Embed Pods Frameworks */ = {
+		DE42984E8C308FE3C4AC5130 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-uTrack-uTrackUITests/Pods-uTrack-uTrackUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-uTrack-uTrackUITests/Pods-uTrack-uTrackUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uTrack-uTrackUITests/Pods-uTrack-uTrackUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9676559EC5B440C0DD490A29 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-uTrack/Pods-uTrack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-uTrack/Pods-uTrack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uTrackUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uTrack/Pods-uTrack-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2E2A07DF25CF95AC007EEE30 /* Sources */ = {
+		343041AF20433CDC0077289F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2A07EB25CF95AC007EEE30 /* ViewController.swift in Sources */,
-				2E2A07E725CF95AC007EEE30 /* AppDelegate.swift in Sources */,
-				2E2A07E925CF95AC007EEE30 /* SceneDelegate.swift in Sources */,
+				34F562F320912C4B001BA07B /* OnlineStatusTableViewController.swift in Sources */,
+				349B8279209D73D70012B601 /* AroundMeViewController.swift in Sources */,
+				3413BDEA2045272F00E47BD9 /* AuthorizationViewController.swift in Sources */,
+				345CC220209E0E2C00BE6CAF /* NotificationHandler.swift in Sources */,
+				348953C6208ED58100EFE20C /* ItemInfoViewController.swift in Sources */,
+				34A4B92B209AD23800CE6217 /* InStockTableViewCell.swift in Sources */,
+				346D4A13208EF73D00BC7795 /* CheckStock.swift in Sources */,
+				34AA15CE2086963A00D0B4BE /* MainCollectionViewController.swift in Sources */,
+				344265F0207591BA00011DFD /* PresetItemsTableViewController.swift in Sources */,
+				3457779E2043B72B00A25106 /* ItemHandler.swift in Sources */,
+				3477B6FF20995E9A003308B9 /* FlowLayout.swift in Sources */,
+				343041B720433CDC0077289F /* AppDelegate.swift in Sources */,
+				344265F32075927A00011DFD /* SavedDataHandler.swift in Sources */,
+				341A35862088155700D2A4A9 /* TrackedItemCollectionViewCell.swift in Sources */,
+				342F90F5209C105B0011BBF1 /* WebViewController.swift in Sources */,
+				340756872044C02E00649C3D /* SetupProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E2A07F525CF95AD007EEE30 /* Sources */ = {
+		343041C620433CDD0077289F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2A07FE25CF95AD007EEE30 /* uTrackTests.swift in Sources */,
+				343041CF20433CDD0077289F /* uTrackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E2A080025CF95AD007EEE30 /* Sources */ = {
+		343041D120433CDD0077289F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2A080925CF95AD007EEE30 /* uTrackUITests.swift in Sources */,
+				343041DA20433CDD0077289F /* uTrackUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2E2A07FB25CF95AD007EEE30 /* PBXTargetDependency */ = {
+		343041CC20433CDD0077289F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E2A07E225CF95AC007EEE30 /* uTrack */;
-			targetProxy = 2E2A07FA25CF95AD007EEE30 /* PBXContainerItemProxy */;
+			target = 343041B220433CDC0077289F /* uTrack */;
+			targetProxy = 343041CB20433CDD0077289F /* PBXContainerItemProxy */;
 		};
-		2E2A080625CF95AD007EEE30 /* PBXTargetDependency */ = {
+		343041D720433CDD0077289F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E2A07E225CF95AC007EEE30 /* uTrack */;
-			targetProxy = 2E2A080525CF95AD007EEE30 /* PBXContainerItemProxy */;
+			target = 343041B220433CDC0077289F /* uTrack */;
+			targetProxy = 343041D620433CDD0077289F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2E2A07EC25CF95AC007EEE30 /* Main.storyboard */ = {
+		343041C220433CDC0077289F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2E2A07ED25CF95AC007EEE30 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2E2A07F125CF95AD007EEE30 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E2A07F225CF95AD007EEE30 /* Base */,
+				343041C320433CDC0077289F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -464,7 +784,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2E2A080B25CF95AD007EEE30 /* Debug */ = {
+		343041DC20433CDD0077289F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -474,7 +794,6 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -490,13 +809,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -515,9 +834,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -525,7 +843,7 @@
 			};
 			name = Debug;
 		};
-		2E2A080C25CF95AD007EEE30 /* Release */ = {
+		343041DD20433CDD0077289F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -535,7 +853,6 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -551,13 +868,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -570,72 +887,61 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		2E2A080E25CF95AD007EEE30 /* Debug */ = {
+		343041DF20433CDD0077289F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5699113D43C2E8C003A316B6 /* Pods-uTrack.debug.xcconfig */;
+			baseConfigurationReference = F99DFA53F5BACEA19DA753F4 /* Pods-uTrack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = uTrack/uTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
-				INFOPLIST_FILE = uTrack/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uapps.uTrack;
+				INFOPLIST_FILE = "$(SRCROOT)/uTrack/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC300MOJ.uTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2E2A080F25CF95AD007EEE30 /* Release */ = {
+		343041E020433CDD0077289F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0684B0B110A55B431081485 /* Pods-uTrack.release.xcconfig */;
+			baseConfigurationReference = 5000E2B033E794FFB6153DAF /* Pods-uTrack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = uTrack/uTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
-				INFOPLIST_FILE = uTrack/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uapps.uTrack;
+				INFOPLIST_FILE = "$(SRCROOT)/uTrack/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC300MOJ.uTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		2E2A081125CF95AD007EEE30 /* Debug */ = {
+		343041E220433CDD0077289F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 077416D2125FD87085609BF5 /* Pods-uTrackTests.debug.xcconfig */;
+			baseConfigurationReference = DDDC46849E464DE39E7AAC75 /* Pods-uTrackTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uTrackTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uapps.uTrackTests;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC300MOJ.uTrackTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -643,22 +949,17 @@
 			};
 			name = Debug;
 		};
-		2E2A081225CF95AD007EEE30 /* Release */ = {
+		343041E320433CDD0077289F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6858A6728139BA3CC1399DE /* Pods-uTrackTests.release.xcconfig */;
+			baseConfigurationReference = 94CBE0D0FB95AFAD24EC5FC9 /* Pods-uTrackTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uTrackTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uapps.uTrackTests;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC300MOJ.uTrackTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -666,20 +967,16 @@
 			};
 			name = Release;
 		};
-		2E2A081425CF95AD007EEE30 /* Debug */ = {
+		343041E520433CDD0077289F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2ECF389289C596946D0CBFE /* Pods-uTrack-uTrackUITests.debug.xcconfig */;
+			baseConfigurationReference = DDAA90A85B2CB90CDDB33CF6 /* Pods-uTrackUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uTrackUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uapps.uTrackUITests;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC300MOJ.uTrackUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -687,20 +984,16 @@
 			};
 			name = Debug;
 		};
-		2E2A081525CF95AD007EEE30 /* Release */ = {
+		343041E620433CDD0077289F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB02F7F3206A3BA02C61336D /* Pods-uTrack-uTrackUITests.release.xcconfig */;
+			baseConfigurationReference = 5CFE7C6A105FDDB7BCEF49D4 /* Pods-uTrackUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uTrackUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uapps.uTrackUITests;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC300MOJ.uTrackUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -711,43 +1004,56 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E2A07DE25CF95AC007EEE30 /* Build configuration list for PBXProject "uTrack" */ = {
+		343041AE20433CDC0077289F /* Build configuration list for PBXProject "uTrack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E2A080B25CF95AD007EEE30 /* Debug */,
-				2E2A080C25CF95AD007EEE30 /* Release */,
+				343041DC20433CDD0077289F /* Debug */,
+				343041DD20433CDD0077289F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E2A080D25CF95AD007EEE30 /* Build configuration list for PBXNativeTarget "uTrack" */ = {
+		343041DE20433CDD0077289F /* Build configuration list for PBXNativeTarget "uTrack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E2A080E25CF95AD007EEE30 /* Debug */,
-				2E2A080F25CF95AD007EEE30 /* Release */,
+				343041DF20433CDD0077289F /* Debug */,
+				343041E020433CDD0077289F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E2A081025CF95AD007EEE30 /* Build configuration list for PBXNativeTarget "uTrackTests" */ = {
+		343041E120433CDD0077289F /* Build configuration list for PBXNativeTarget "uTrackTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E2A081125CF95AD007EEE30 /* Debug */,
-				2E2A081225CF95AD007EEE30 /* Release */,
+				343041E220433CDD0077289F /* Debug */,
+				343041E320433CDD0077289F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E2A081325CF95AD007EEE30 /* Build configuration list for PBXNativeTarget "uTrackUITests" */ = {
+		343041E420433CDD0077289F /* Build configuration list for PBXNativeTarget "uTrackUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E2A081425CF95AD007EEE30 /* Debug */,
-				2E2A081525CF95AD007EEE30 /* Release */,
+				343041E520433CDD0077289F /* Debug */,
+				343041E620433CDD0077289F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		343041BD20433CDC0077289F /* uTrack.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				343041BE20433CDC0077289F /* uTrack.xcdatamodel */,
+			);
+			currentVersion = 343041BE20433CDC0077289F /* uTrack.xcdatamodel */;
+			path = uTrack.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 2E2A07DB25CF95AC007EEE30 /* Project object */;
+	rootObject = 343041AB20433CDC0077289F /* Project object */;
 }
