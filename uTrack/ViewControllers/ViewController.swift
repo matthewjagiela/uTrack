@@ -6,11 +6,17 @@
 //
 
 import UIKit
-
+import SwiftUI
 class ViewController: UIViewController {
-
+    var hostingView: UIHostingController<IntroView>?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        hostingView = UIHostingController(rootView: IntroView())
+        if let hostingView = self.hostingView {
+            addChild(hostingView)
+            hostingView.view.frame = view.frame
+            view.addSubview(hostingView.view)
+            hostingView.didMove(toParent: self)
+        }
     }
 }
