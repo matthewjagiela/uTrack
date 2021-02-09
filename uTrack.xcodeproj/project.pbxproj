@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,6 @@
 		2E2A07FE25CF95AD007EEE30 /* uTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A07FD25CF95AD007EEE30 /* uTrackTests.swift */; };
 		2E2A080925CF95AD007EEE30 /* uTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A080825CF95AD007EEE30 /* uTrackUITests.swift */; };
 		2E3EDEDD2FCDC647CEF751E1 /* Pods_uTrack_uTrackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08957B078A2D4AA148D93003 /* Pods_uTrack_uTrackUITests.framework */; };
-		2EC3CB2925D0F608001F95E9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC3CB2825D0F608001F95E9 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +54,6 @@
 		2E2A080425CF95AD007EEE30 /* uTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2A080825CF95AD007EEE30 /* uTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uTrackUITests.swift; sourceTree = "<group>"; };
 		2E2A080A25CF95AD007EEE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EC3CB2725D0F602001F95E9 /* uTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uTrack.entitlements; sourceTree = "<group>"; };
-		2EC3CB2825D0F608001F95E9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		5699113D43C2E8C003A316B6 /* Pods-uTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack.debug.xcconfig"; path = "Target Support Files/Pods-uTrack/Pods-uTrack.debug.xcconfig"; sourceTree = "<group>"; };
 		A6858A6728139BA3CC1399DE /* Pods-uTrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrackTests.release.xcconfig"; path = "Target Support Files/Pods-uTrackTests/Pods-uTrackTests.release.xcconfig"; sourceTree = "<group>"; };
 		B0684B0B110A55B431081485 /* Pods-uTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack.release.xcconfig"; path = "Target Support Files/Pods-uTrack/Pods-uTrack.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,7 +69,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1728264D21146AF314A67B /* Pods_uTrack.framework in Frameworks */,
-				2EC3CB2925D0F608001F95E9 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,12 +116,13 @@
 		2E2A07E525CF95AC007EEE30 /* uTrack */ = {
 			isa = PBXGroup;
 			children = (
-				2EC3CB4B25D0F738001F95E9 /* Models */,
-				2EC3CB4A25D0F72D001F95E9 /* SwiftUI */,
-				2EC3CB4625D0F710001F95E9 /* ViewModels */,
-				2EC3CB4525D0F6FC001F95E9 /* ViewControllers */,
-				2EC3CB2725D0F602001F95E9 /* uTrack.entitlements */,
-				2EC3CB2025D0F53B001F95E9 /* Other */,
+				2E2A07E625CF95AC007EEE30 /* AppDelegate.swift */,
+				2E2A07E825CF95AC007EEE30 /* SceneDelegate.swift */,
+				2E2A07EA25CF95AC007EEE30 /* ViewController.swift */,
+				2E2A07EC25CF95AC007EEE30 /* Main.storyboard */,
+				2E2A07EF25CF95AD007EEE30 /* Assets.xcassets */,
+				2E2A07F125CF95AD007EEE30 /* LaunchScreen.storyboard */,
+				2E2A07F425CF95AD007EEE30 /* Info.plist */,
 			);
 			path = uTrack;
 			sourceTree = "<group>";
@@ -148,52 +145,9 @@
 			path = uTrackUITests;
 			sourceTree = "<group>";
 		};
-		2EC3CB2025D0F53B001F95E9 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				2E2A07E625CF95AC007EEE30 /* AppDelegate.swift */,
-				2E2A07E825CF95AC007EEE30 /* SceneDelegate.swift */,
-				2E2A07EC25CF95AC007EEE30 /* Main.storyboard */,
-				2E2A07F125CF95AD007EEE30 /* LaunchScreen.storyboard */,
-				2E2A07EF25CF95AD007EEE30 /* Assets.xcassets */,
-				2E2A07F425CF95AD007EEE30 /* Info.plist */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		2EC3CB4525D0F6FC001F95E9 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				2E2A07EA25CF95AC007EEE30 /* ViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		2EC3CB4625D0F710001F95E9 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		2EC3CB4A25D0F72D001F95E9 /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SwiftUI;
-			sourceTree = "<group>";
-		};
-		2EC3CB4B25D0F738001F95E9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		8F6B99E8D9BA47E244A2A77B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EC3CB2825D0F608001F95E9 /* CloudKit.framework */,
 				E05FF4E5386EA2E5088CE5E2 /* Pods_uTrack.framework */,
 				08957B078A2D4AA148D93003 /* Pods_uTrack_uTrackUITests.framework */,
 				FA7A0253BDAE531ED64B0CD3 /* Pods_uTrackTests.framework */,
@@ -211,6 +165,7 @@
 				077416D2125FD87085609BF5 /* Pods-uTrackTests.debug.xcconfig */,
 				A6858A6728139BA3CC1399DE /* Pods-uTrackTests.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -631,18 +586,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = uTrack/uTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
-				INFOPLIST_FILE = uTrack/Other/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				INFOPLIST_FILE = uTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uapps.uTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -654,18 +606,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = uTrack/uTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
-				INFOPLIST_FILE = uTrack/Other/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				INFOPLIST_FILE = uTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uapps.uTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
