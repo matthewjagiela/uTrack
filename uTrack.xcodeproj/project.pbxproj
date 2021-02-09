@@ -123,9 +123,6 @@
 		2E2A07E525CF95AC007EEE30 /* uTrack */ = {
 			isa = PBXGroup;
 			children = (
-				2EC3CB4B25D0F738001F95E9 /* Models */,
-				2EC3CB4A25D0F72D001F95E9 /* SwiftUI */,
-				2EC3CB4625D0F710001F95E9 /* ViewModels */,
 				2EC3CB4525D0F6FC001F95E9 /* ViewControllers */,
 				2EC3CB2725D0F602001F95E9 /* uTrack.entitlements */,
 				2EC3CB2025D0F53B001F95E9 /* Other */,
@@ -170,27 +167,6 @@
 				2E2A07EA25CF95AC007EEE30 /* ViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		2EC3CB4625D0F710001F95E9 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		2EC3CB4A25D0F72D001F95E9 /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SwiftUI;
-			sourceTree = "<group>";
-		};
-		2EC3CB4B25D0F738001F95E9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		8F6B99E8D9BA47E244A2A77B /* Frameworks */ = {
