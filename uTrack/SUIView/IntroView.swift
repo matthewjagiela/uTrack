@@ -10,7 +10,7 @@ import SwiftUI
 struct IntroView: View {
     var body: some View {
         TabView {
-            Text("1")
+            WelcomeView()
             Text("2")
             Text("3")
             Text("4")

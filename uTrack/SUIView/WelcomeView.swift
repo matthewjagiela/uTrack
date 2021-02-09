@@ -13,7 +13,10 @@ struct WelcomeView: View {
             Text("Welcome to uTrack")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .fontWeight(.light)
-        }
+            Spacer()
+            Text("uTrack allows you to be notified when hot items come in stock. First, we need to get information on what products you would like to get notified about")
+            Spacer()
+        }.padding()
     }
 }
 
