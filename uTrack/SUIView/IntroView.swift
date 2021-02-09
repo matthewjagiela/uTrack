@@ -9,7 +9,13 @@ import SwiftUI
 
 struct IntroView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            Text("1")
+            Text("2")
+            Text("3")
+            Text("4")
+        }.tabViewStyle(PageTabViewStyle())
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
     }
 }
 
