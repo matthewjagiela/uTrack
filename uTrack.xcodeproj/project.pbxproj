@@ -19,6 +19,7 @@
 		2E2A080925CF95AD007EEE30 /* uTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A080825CF95AD007EEE30 /* uTrackUITests.swift */; };
 		2E3EDEDD2FCDC647CEF751E1 /* Pods_uTrack_uTrackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08957B078A2D4AA148D93003 /* Pods_uTrack_uTrackUITests.framework */; };
 		2EAE9E8225D238F1002C19DF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE9E8125D238F1002C19DF /* .swiftlint.yml */; };
+		2EAE9EE425D23E04002C19DF /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE9EE325D23E04002C19DF /* IntroView.swift */; };
 		2EC3CB2925D0F608001F95E9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC3CB2825D0F608001F95E9 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		2E2A080825CF95AD007EEE30 /* uTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uTrackUITests.swift; sourceTree = "<group>"; };
 		2E2A080A25CF95AD007EEE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EAE9E8125D238F1002C19DF /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		2EAE9EE325D23E04002C19DF /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		2EC3CB2725D0F602001F95E9 /* uTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uTrack.entitlements; sourceTree = "<group>"; };
 		2EC3CB2825D0F608001F95E9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		5699113D43C2E8C003A316B6 /* Pods-uTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uTrack.debug.xcconfig"; path = "Target Support Files/Pods-uTrack/Pods-uTrack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		2E2A07E525CF95AC007EEE30 /* uTrack */ = {
 			isa = PBXGroup;
 			children = (
+				2EAE9EDF25D23DEB002C19DF /* SUIView */,
 				2EC3CB4525D0F6FC001F95E9 /* ViewControllers */,
 				2EC3CB2725D0F602001F95E9 /* uTrack.entitlements */,
 				2EC3CB2025D0F53B001F95E9 /* Other */,
@@ -146,6 +149,14 @@
 				2E2A080A25CF95AD007EEE30 /* Info.plist */,
 			);
 			path = uTrackUITests;
+			sourceTree = "<group>";
+		};
+		2EAE9EDF25D23DEB002C19DF /* SUIView */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE9EE325D23E04002C19DF /* IntroView.swift */,
+			);
+			path = SUIView;
 			sourceTree = "<group>";
 		};
 		2EC3CB2025D0F53B001F95E9 /* Other */ = {
@@ -451,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E2A07EB25CF95AC007EEE30 /* ViewController.swift in Sources */,
+				2EAE9EE425D23E04002C19DF /* IntroView.swift in Sources */,
 				2E2A07E725CF95AC007EEE30 /* AppDelegate.swift in Sources */,
 				2E2A07E925CF95AC007EEE30 /* SceneDelegate.swift in Sources */,
 			);
